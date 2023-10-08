@@ -1,6 +1,9 @@
 const fs = require('fs')
 
 global.creator = 'YuuXD'
+global.deepaiapikey = 'quickstart-QUdJIGlzIGNvbWluZy4uLi4K'
+global.openaiapi = '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'
+global.stableapi = 'hVBeyrikyYruPpJIW0pFKYJ2UDkULWFAk9zvw6WgA7MtEERVALvHa9XhO2d9'
 global.MONGO_DB_URI = "mongodb+srv://YuuXD-Api:Bayujelek03@cluster0.ys3kg89.mongodb.net/?retryWrites=true&w=majority"
 global.ACTIVATION_TOKEN_SECRET = "-@Pqnap+@(/1jAPPnew/@10" 
 global.your_email = "yuuxdrestapi@gmail.com"

@@ -40,7 +40,7 @@
 <link rel="stylesheet" href="css/regular.css">
 <link rel="stylesheet" href="css/regular.min.css">
 <link rel="stylesheet" href="css/all.css">
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body id="page-top" onload="getvisitor();">
@@ -217,11 +217,11 @@ Profile
           <div class="card-body text-sm-left font-weight-bold">
             <p class="status" style="color: white; font-size: 20px;"></p>
             <h2 class="warn" style="color: red"></h2>
-            <label for="URL">Enter New Name:</label>
-            <input type="text" class="form-control" placeholder="New name" name="name" required="" value="">
+            <label for="name">Enter New Name:</label>
+            <input type="text" class="form-control" placeholder="New name" name="name" required="" value="<%= username %>">
             <br>
-            <label for="URL">Enter New Email:</label>
-            <input type="text" class="form-control" placeholder="New email" name="email" required="" value="">
+            <label for="email">Enter New Email:</label>
+            <input type="text" class="form-control" placeholder="New email" name="email" required="" value="<%= email %>">
             <br><br>
             <button type="button" class="btn btn-success" id="submitForm1">Submit</button>
           </div>
@@ -235,10 +235,10 @@ Profile
           <div class="card-body text-sm-left font-weight-bold">
             <p class="status" style="color: white; font-size: 20px;"></p>
             <h2 class="warn" style="color: red"></h2>
-            <label for="URL">Enter New Password:</label>
+            <label for="password">Enter New Password:</label>
             <input type="text" class="form-control" placeholder="New password" name="password" required="" value="">
             <br>
-            <label for="URL">Confirm Password:</label>
+            <label for="password">Confirm Password:</label>
             <input type="text" class="form-control" placeholder="Confirm Password" name="password" required="" value="">
             <br><br>
             <button type="button" class="btn btn-success" id="submitForm2">Submit</button>

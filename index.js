@@ -101,9 +101,11 @@ app.get('/docs', isAuthenticated, async(req, res) => {
 })
 
 app.get('/profile', isAuthenticated, async(req, res) => {
+  const userEmail = req.user.email;
   let getkey = await getApikey(req.user.id)
   let { apikey, username, limit} = getkey
   res.render('profile', {
+    email: userEmail,
     apikey,
     username,
     limit,
@@ -175,15 +177,6 @@ app.get('/nsfw', isAuthenticated, async(req, res) => {
     layout: 'nsfw'
   });
 })
-
-// app.get('/islam', isAuthenticated, async(req, res) => {
-//   let getkey = await getApikey(req.user.id)
-//   let { apikey, username } = getkey
-//   res.render('islam', {
-//     apikey,
-//     layout: 'islam'
-//   });
-// })
 
 app.get('/game', isAuthenticated, async(req, res) => {
   let getkey = await getApikey(req.user.id)

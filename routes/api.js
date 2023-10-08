@@ -1,1 +1,2003 @@
-var _0x24c76f=_0x4d32;function _0x4d32(_0x143186,_0x40a760){var _0x37b59a=_0x37b5();return _0x4d32=function(_0x4d321d,_0x34ff01){_0x4d321d=_0x4d321d-0x18e;var _0x54a6fb=_0x37b59a[_0x4d321d];return _0x54a6fb;},_0x4d32(_0x143186,_0x40a760);}(function(_0x487f70,_0x834bbf){var _0x140856=_0x4d32,_0x4caa33=_0x487f70();while(!![]){try{var _0x2214e8=parseInt(_0x140856(0x271))/0x1*(-parseInt(_0x140856(0x1c1))/0x2)+-parseInt(_0x140856(0x21f))/0x3*(-parseInt(_0x140856(0x1f0))/0x4)+-parseInt(_0x140856(0x20c))/0x5+-parseInt(_0x140856(0x2a5))/0x6+parseInt(_0x140856(0x27b))/0x7*(-parseInt(_0x140856(0x231))/0x8)+parseInt(_0x140856(0x1eb))/0x9*(parseInt(_0x140856(0x266))/0xa)+parseInt(_0x140856(0x1ef))/0xb*(parseInt(_0x140856(0x1ea))/0xc);if(_0x2214e8===_0x834bbf)break;else _0x4caa33['push'](_0x4caa33['shift']());}catch(_0x3c6346){_0x4caa33['push'](_0x4caa33['shift']());}}}(_0x37b5,0xbf394),__path=process[_0x24c76f(0x252)](),require(_0x24c76f(0x206)));var express=require(_0x24c76f(0x1bc)),axios=require(_0x24c76f(0x232)),fetch=require('node-fetch'),request=require('request'),fs=require('fs'),router=express['Router'](),creator=global[_0x24c76f(0x22e)];const {limitAdd,isLimit,cekKey,checkLimit}=require(_0x24c76f(0x1c4)),scr=require(_0x24c76f(0x201)),{color,bgcolor}=require(__path+_0x24c76f(0x1c6)),{fetchJson}=require(__path+_0x24c76f(0x18e)),options=require(__path+'/lib/options.js'),{getBuffer}=require(__path+_0x24c76f(0x260)),oxy=require(__path+_0x24c76f(0x1b4));router[_0x24c76f(0x24b)](_0x24c76f(0x193),async(_0x2b7ddb,_0x5e7c8f,_0x200442)=>{var _0x4fcd3d=_0x24c76f,_0x2af10b=_0x2b7ddb[_0x4fcd3d(0x289)]['apikey'];if(!_0x2af10b)return _0x5e7c8f[_0x4fcd3d(0x212)](loghandler['noapikey']);const _0x196496=await cekKey(_0x2af10b);if(!_0x196496)return _0x5e7c8f[_0x4fcd3d(0x204)](0x193)['send']({'status':0x193,'message':'apikey\x20'+_0x2af10b+_0x4fcd3d(0x2a2)+_0x2b7ddb[_0x4fcd3d(0x28f)]+_0x4fcd3d(0x224),'result':_0x4fcd3d(0x291)});const _0x11b6e1=await checkLimit(_0x2af10b);_0x5e7c8f[_0x4fcd3d(0x20d)]({'status':0xc8,'apikey':_0x2af10b,'limit':_0x11b6e1});}),router[_0x24c76f(0x24b)](_0x24c76f(0x25e),async(_0x20d4fd,_0x3e026f,_0x5d12c9)=>{var _0x4e7aad=_0x24c76f,_0x16a03e=_0x20d4fd[_0x4e7aad(0x289)][_0x4e7aad(0x1b3)];if(!_0x16a03e)return _0x3e026f[_0x4e7aad(0x212)](loghandler['noapikey']);const _0x279e07=await cekKey(_0x16a03e);if(!_0x279e07)return _0x3e026f['status'](0x193)['send']({'status':0x193,'message':_0x4e7aad(0x273)+_0x16a03e+'\x20not\x20found,\x20please\x20register\x20first!\x20https://'+_0x20d4fd[_0x4e7aad(0x28f)]+_0x4e7aad(0x224),'result':_0x4e7aad(0x291)});let _0x49971f=await isLimit(_0x16a03e);if(_0x49971f)return _0x3e026f[_0x4e7aad(0x204)](0x193)['send']({'status':0x193,'message':_0x4e7aad(0x207)});var _0x4e2027=[_0x4e7aad(0x1aa),_0x4e7aad(0x254),_0x4e7aad(0x1fb),_0x4e7aad(0x24d),_0x4e7aad(0x242),'https://i.postimg.cc/zX8wfzKg/14.jpg',_0x4e7aad(0x248),_0x4e7aad(0x1b6),_0x4e7aad(0x2b0),_0x4e7aad(0x269),'https://i.postimg.cc/fT8dTxMG/19.jpg','https://i.postimg.cc/RFwfMy0d/2.jpg',_0x4e7aad(0x1da),_0x4e7aad(0x1e2),_0x4e7aad(0x2b3),_0x4e7aad(0x1e8),_0x4e7aad(0x1a4),_0x4e7aad(0x244),_0x4e7aad(0x1b8),'https://i.postimg.cc/RhM3v0yC/27.jpg',_0x4e7aad(0x1e9),_0x4e7aad(0x296),_0x4e7aad(0x267),_0x4e7aad(0x250),'https://i.postimg.cc/3RZRfTRs/31.jpg','https://i.postimg.cc/HnZLH9b3/4.jpg',_0x4e7aad(0x263),'https://i.postimg.cc/4N03Swfx/6.jpg','https://i.postimg.cc/66YqdtFR/7.jpg',_0x4e7aad(0x1e6),_0x4e7aad(0x21a)],_0x38e837=_0x4e2027[Math[_0x4e7aad(0x195)](Math[_0x4e7aad(0x1d7)]()*_0x4e2027[_0x4e7aad(0x1e7)])],_0x19058d={'url':_0x38e837,'method':_0x4e7aad(0x19d),'encoding':null};request(_0x19058d,function(_0x5cb21d,_0x56437a,_0x3144bf){var _0x21866f=_0x4e7aad;_0x3e026f[_0x21866f(0x218)]('Content-Type',_0x21866f(0x229)),_0x3e026f[_0x21866f(0x20d)](_0x3144bf);}),limitAdd(_0x16a03e);}),router[_0x24c76f(0x24b)](_0x24c76f(0x209),async(_0x579f58,_0x12a4ff,_0x3db817)=>{var _0x23742b=_0x24c76f,_0x29f436=_0x579f58[_0x23742b(0x289)][_0x23742b(0x1b3)];if(!_0x29f436)return _0x12a4ff[_0x23742b(0x212)](loghandler['noapikey']);const _0x36132d=await cekKey(_0x29f436);if(!_0x36132d)return _0x12a4ff[_0x23742b(0x204)](0x193)['send']({'status':0x193,'message':_0x23742b(0x273)+_0x29f436+_0x23742b(0x2a2)+_0x579f58[_0x23742b(0x28f)]+_0x23742b(0x224),'result':'error'});let _0x25c479=await isLimit(_0x29f436);if(_0x25c479)return _0x12a4ff[_0x23742b(0x204)](0x193)[_0x23742b(0x20d)]({'status':0x193,'message':_0x23742b(0x207)});var _0x3bb01e=[_0x23742b(0x1aa),_0x23742b(0x254),_0x23742b(0x1fb),_0x23742b(0x24d),_0x23742b(0x242),_0x23742b(0x1c2),_0x23742b(0x248),_0x23742b(0x1b6),'https://i.postimg.cc/nrkDmmBQ/17.jpg',_0x23742b(0x269),'https://i.postimg.cc/fT8dTxMG/19.jpg',_0x23742b(0x1cc),_0x23742b(0x1da),'https://i.postimg.cc/dVDy7L1L/21.jpg',_0x23742b(0x2b3),_0x23742b(0x1e8),_0x23742b(0x1a4),_0x23742b(0x244),_0x23742b(0x1b8),_0x23742b(0x261),_0x23742b(0x1e9),'https://i.postimg.cc/VsRrDj0J/29.jpg',_0x23742b(0x267),_0x23742b(0x250),_0x23742b(0x20f),'https://i.postimg.cc/HnZLH9b3/4.jpg',_0x23742b(0x263),_0x23742b(0x1c7),_0x23742b(0x294),'https://i.postimg.cc/rwtpXWsC/8.jpg',_0x23742b(0x21a)],_0x1a2c90=_0x3bb01e[Math[_0x23742b(0x195)](Math['random']()*_0x3bb01e[_0x23742b(0x1e7)])],_0x4dbb85={'url':_0x1a2c90,'method':_0x23742b(0x19d),'encoding':null};request(_0x4dbb85,function(_0x11453d,_0x3b8876,_0x2e4857){var _0xfc37a8=_0x23742b;_0x12a4ff['set']('Content-Type','image/png'),_0x12a4ff[_0xfc37a8(0x20d)](_0x2e4857);}),limitAdd(_0x29f436);}),router['get'](_0x24c76f(0x1d8),async(_0x28bb16,_0x2adc8d,_0x5543cc)=>{var _0xfbcf7=_0x24c76f,_0xb35039=_0x28bb16[_0xfbcf7(0x289)][_0xfbcf7(0x1b3)];if(!_0xb35039)return _0x2adc8d[_0xfbcf7(0x212)](loghandler[_0xfbcf7(0x290)]);const _0x24185f=await cekKey(_0xb35039);if(!_0x24185f)return _0x2adc8d[_0xfbcf7(0x204)](0x193)[_0xfbcf7(0x20d)]({'status':0x193,'message':_0xfbcf7(0x273)+_0xb35039+_0xfbcf7(0x2a2)+_0x28bb16[_0xfbcf7(0x28f)]+_0xfbcf7(0x224),'result':_0xfbcf7(0x291)});let _0x3f503d=await isLimit(_0xb35039);if(_0x3f503d)return _0x2adc8d[_0xfbcf7(0x204)](0x193)[_0xfbcf7(0x20d)]({'status':0x193,'message':_0xfbcf7(0x207)});var _0x3623d7=[_0xfbcf7(0x27c),_0xfbcf7(0x268),_0xfbcf7(0x21d),_0xfbcf7(0x1bb),_0xfbcf7(0x241),_0xfbcf7(0x24a),_0xfbcf7(0x1b9),_0xfbcf7(0x2a7),_0xfbcf7(0x23a),'https://i.postimg.cc/j2Ld50M7/18.jpg',_0xfbcf7(0x219),'https://i.postimg.cc/MHMqw0G0/2.jpg',_0xfbcf7(0x272),_0xfbcf7(0x280),_0xfbcf7(0x1e1),_0xfbcf7(0x292),_0xfbcf7(0x1f6),'https://i.postimg.cc/MK0KpDDt/6.jpg',_0xfbcf7(0x1c0),_0xfbcf7(0x1d9),'https://i.postimg.cc/C5TSFBnW/9.jpg'],_0xd682b9=_0x3623d7[Math[_0xfbcf7(0x195)](Math[_0xfbcf7(0x1d7)]()*_0x3623d7[_0xfbcf7(0x1e7)])],_0x686fce={'url':_0xd682b9,'method':'GET','encoding':null};request(_0x686fce,function(_0x58f043,_0x252245,_0x1dcfd8){var _0x5444f8=_0xfbcf7;_0x2adc8d['set']('Content-Type',_0x5444f8(0x229)),_0x2adc8d[_0x5444f8(0x20d)](_0x1dcfd8);}),limitAdd(_0xb35039);}),router['get'](_0x24c76f(0x194),async(_0x13ca27,_0x3b77f3,_0x391e99)=>{var _0xcf010b=_0x24c76f,_0x344ba0=_0x13ca27[_0xcf010b(0x289)][_0xcf010b(0x1b3)];if(!_0x344ba0)return _0x3b77f3[_0xcf010b(0x212)](loghandler[_0xcf010b(0x290)]);const _0x122c55=await cekKey(_0x344ba0);if(!_0x122c55)return _0x3b77f3[_0xcf010b(0x204)](0x193)['send']({'status':0x193,'message':_0xcf010b(0x273)+_0x344ba0+_0xcf010b(0x2a2)+_0x13ca27[_0xcf010b(0x28f)]+_0xcf010b(0x224),'result':_0xcf010b(0x291)});let _0x250fa7=await isLimit(_0x344ba0);if(_0x250fa7)return _0x3b77f3[_0xcf010b(0x204)](0x193)[_0xcf010b(0x20d)]({'status':0x193,'message':_0xcf010b(0x207)});var _0x2a40b2=[_0xcf010b(0x26e),'https://i.postimg.cc/k5wmbJYp/10.jpg',_0xcf010b(0x1ca),_0xcf010b(0x1ba),_0xcf010b(0x2ab),'https://i.postimg.cc/gkRr6hVt/14.jpg',_0xcf010b(0x255),_0xcf010b(0x29b),_0xcf010b(0x1db),_0xcf010b(0x2b5),'https://i.postimg.cc/k55nwRSm/19.jpg',_0xcf010b(0x1ec),_0xcf010b(0x2a9),_0xcf010b(0x198),_0xcf010b(0x2a1),'https://i.postimg.cc/m2wfq2B2/23.jpg',_0xcf010b(0x28c),_0xcf010b(0x29f),_0xcf010b(0x21c),_0xcf010b(0x249),_0xcf010b(0x281),_0xcf010b(0x1a1),_0xcf010b(0x26d),_0xcf010b(0x18f),_0xcf010b(0x1dd),_0xcf010b(0x1a0),_0xcf010b(0x262),_0xcf010b(0x239),_0xcf010b(0x22f),_0xcf010b(0x24e),_0xcf010b(0x2a3),'https://i.postimg.cc/mkgNgwzn/38.jpg','https://i.postimg.cc/pXyJNsth/4.jpg',_0xcf010b(0x22a),_0xcf010b(0x202),_0xcf010b(0x1a8),_0xcf010b(0x1c5)],_0xe7aef7=_0x2a40b2[Math[_0xcf010b(0x195)](Math[_0xcf010b(0x1d7)]()*_0x2a40b2[_0xcf010b(0x1e7)])],_0x15ec44={'url':_0xe7aef7,'method':_0xcf010b(0x19d),'encoding':null};request(_0x15ec44,function(_0x2e3b0b,_0x3e9c55,_0x4e9509){var _0x51f120=_0xcf010b;_0x3b77f3[_0x51f120(0x218)](_0x51f120(0x29a),'image/png'),_0x3b77f3['send'](_0x4e9509);}),limitAdd(_0x344ba0);}),router['get'](_0x24c76f(0x270),async(_0x2f1318,_0x38f7a7,_0x5d5a50)=>{var _0x1b5d54=_0x24c76f,_0x3277c4=_0x2f1318[_0x1b5d54(0x289)]['apikey'];if(!_0x3277c4)return _0x38f7a7[_0x1b5d54(0x212)](loghandler[_0x1b5d54(0x290)]);const _0x5dbe4f=await cekKey(_0x3277c4);if(!_0x5dbe4f)return _0x38f7a7[_0x1b5d54(0x204)](0x193)[_0x1b5d54(0x20d)]({'status':0x193,'message':_0x1b5d54(0x273)+_0x3277c4+_0x1b5d54(0x2a2)+_0x2f1318['hostname']+_0x1b5d54(0x224),'result':_0x1b5d54(0x291)});let _0x348449=await isLimit(_0x3277c4);if(_0x348449)return _0x38f7a7[_0x1b5d54(0x204)](0x193)[_0x1b5d54(0x20d)]({'status':0x193,'message':'your\x20limit\x20has\x20been\x20exhausted,\x20reset\x20every\x2012\x20PM'});var _0x526834=['https://i.postimg.cc/K87Z4CkB/p-19620motq1.jpg',_0x1b5d54(0x1c8),_0x1b5d54(0x20a),_0x1b5d54(0x1a3),_0x1b5d54(0x1d3),_0x1b5d54(0x19e),_0x1b5d54(0x286),_0x1b5d54(0x27e),_0x1b5d54(0x1cb),_0x1b5d54(0x1f8),_0x1b5d54(0x284),_0x1b5d54(0x230),'https://i.postimg.cc/mZVC16Mx/p-1962koqm41.jpg',_0x1b5d54(0x274),'https://i.postimg.cc/3xQ883R3/p-1962spcdo1.jpg',_0x1b5d54(0x1dc),_0x1b5d54(0x2ad),_0x1b5d54(0x257),_0x1b5d54(0x1b7)],_0x394fef=_0x526834[Math[_0x1b5d54(0x195)](Math[_0x1b5d54(0x1d7)]()*_0x526834[_0x1b5d54(0x1e7)])],_0x314d9a={'url':_0x394fef,'method':_0x1b5d54(0x19d),'encoding':null};request(_0x314d9a,function(_0xea34a,_0x227973,_0x107f5c){var _0x57d4df=_0x1b5d54;_0x38f7a7[_0x57d4df(0x218)](_0x57d4df(0x29a),'image/png'),_0x38f7a7['send'](_0x107f5c);}),limitAdd(_0x3277c4);}),router[_0x24c76f(0x24b)](_0x24c76f(0x222),async(_0x454e1e,_0x56b127,_0x43f713)=>{var _0x8c2331=_0x24c76f,_0xb2c578=_0x454e1e['query'][_0x8c2331(0x1b3)];if(!_0xb2c578)return _0x56b127[_0x8c2331(0x212)](loghandler[_0x8c2331(0x290)]);const _0x290aba=await cekKey(_0xb2c578);if(!_0x290aba)return _0x56b127[_0x8c2331(0x204)](0x193)['send']({'status':0x193,'message':_0x8c2331(0x273)+_0xb2c578+'\x20not\x20found,\x20please\x20register\x20first!\x20https://'+_0x454e1e[_0x8c2331(0x28f)]+'/users/signup','result':_0x8c2331(0x291)});let _0x5a27e9=await isLimit(_0xb2c578);if(_0x5a27e9)return _0x56b127[_0x8c2331(0x204)](0x193)[_0x8c2331(0x20d)]({'status':0x193,'message':_0x8c2331(0x207)});var _0x53a3f9=['https://i.postimg.cc/RCcjLvF6/p-196252lk91.jpg','https://i.postimg.cc/7hMdHncM/p-19625eppj1.jpg',_0x8c2331(0x28e),_0x8c2331(0x208),_0x8c2331(0x1cd),_0x8c2331(0x1ff),_0x8c2331(0x25d),'https://i.postimg.cc/bYtzcXvp/p-1962i85aq1.jpg',_0x8c2331(0x298),'https://i.postimg.cc/rFGMsSWH/p-1962o5sp41.jpg',_0x8c2331(0x2ac),'https://i.postimg.cc/T1XBv4k3/p-1962q7ura1.jpg',_0x8c2331(0x211),_0x8c2331(0x28b),_0x8c2331(0x27f),_0x8c2331(0x21e),_0x8c2331(0x26c),_0x8c2331(0x1be)],_0x468022=_0x53a3f9[Math[_0x8c2331(0x195)](Math[_0x8c2331(0x1d7)]()*_0x53a3f9[_0x8c2331(0x1e7)])],_0x5229e9={'url':_0x468022,'method':_0x8c2331(0x19d),'encoding':null};request(_0x5229e9,function(_0x1a1837,_0x3dc68f,_0x38f839){var _0x19da16=_0x8c2331;_0x56b127[_0x19da16(0x218)](_0x19da16(0x29a),_0x19da16(0x229)),_0x56b127[_0x19da16(0x20d)](_0x38f839);}),limitAdd(_0xb2c578);}),router['get'](_0x24c76f(0x259),async(_0x3a2e1b,_0x35d4e4,_0x572150)=>{var _0x338a8e=_0x24c76f,_0x1614e6=_0x3a2e1b[_0x338a8e(0x289)][_0x338a8e(0x1b3)];if(!_0x1614e6)return _0x35d4e4[_0x338a8e(0x212)](loghandler[_0x338a8e(0x290)]);const _0x4f18d3=await cekKey(_0x1614e6);if(!_0x4f18d3)return _0x35d4e4[_0x338a8e(0x204)](0x193)[_0x338a8e(0x20d)]({'status':0x193,'message':_0x338a8e(0x273)+_0x1614e6+'\x20not\x20found,\x20please\x20register\x20first!\x20https://'+_0x3a2e1b[_0x338a8e(0x28f)]+_0x338a8e(0x224),'result':'error'});let _0x3dea99=await isLimit(_0x1614e6);if(_0x3dea99)return _0x35d4e4[_0x338a8e(0x204)](0x193)[_0x338a8e(0x20d)]({'status':0x193,'message':'your\x20limit\x20has\x20been\x20exhausted,\x20reset\x20every\x2012\x20PM'});var _0x3bd4ae=[_0x338a8e(0x285),_0x338a8e(0x2a6),_0x338a8e(0x251),_0x338a8e(0x226),_0x338a8e(0x295),'https://i.postimg.cc/G3QDZSh7/p-1962v04461.jpg',_0x338a8e(0x22c),_0x338a8e(0x1d4),_0x338a8e(0x256),_0x338a8e(0x20e),_0x338a8e(0x221),_0x338a8e(0x228),_0x338a8e(0x23f),_0x338a8e(0x1b2),_0x338a8e(0x1f2),_0x338a8e(0x1f1),_0x338a8e(0x19a),_0x338a8e(0x190),_0x338a8e(0x26f),'https://i.postimg.cc/PqyhtZpj/p-1962d4cuh1.jpg',_0x338a8e(0x2aa),'https://i.postimg.cc/T1LXq4kd/p-1962zgkj21.jpg'],_0x5b2dd9=_0x3bd4ae[Math[_0x338a8e(0x195)](Math['random']()*_0x3bd4ae['length'])],_0x48ec91={'url':_0x5b2dd9,'method':_0x338a8e(0x19d),'encoding':null};request(_0x48ec91,function(_0x24d31e,_0x33c8b4,_0x234cab){var _0x23d530=_0x338a8e;_0x35d4e4[_0x23d530(0x218)](_0x23d530(0x29a),_0x23d530(0x229)),_0x35d4e4['send'](_0x234cab);}),limitAdd(_0x1614e6);}),router[_0x24c76f(0x24b)](_0x24c76f(0x197),async(_0xe74193,_0x33374d,_0x431e81)=>{var _0x12a0a1=_0x24c76f,_0x3b02e3=_0xe74193[_0x12a0a1(0x289)][_0x12a0a1(0x1b3)];if(!_0x3b02e3)return _0x33374d[_0x12a0a1(0x212)](loghandler[_0x12a0a1(0x290)]);const _0x4c9143=await cekKey(_0x3b02e3);if(!_0x4c9143)return _0x33374d['status'](0x193)[_0x12a0a1(0x20d)]({'status':0x193,'message':_0x12a0a1(0x273)+_0x3b02e3+'\x20not\x20found,\x20please\x20register\x20first!\x20https://'+_0xe74193[_0x12a0a1(0x28f)]+_0x12a0a1(0x224),'result':_0x12a0a1(0x291)});let _0x1110c1=await isLimit(_0x3b02e3);if(_0x1110c1)return _0x33374d['status'](0x193)['send']({'status':0x193,'message':_0x12a0a1(0x207)});var _0x201469=[_0x12a0a1(0x2b1),_0x12a0a1(0x1d0),_0x12a0a1(0x23d),_0x12a0a1(0x210),_0x12a0a1(0x1d5),'https://i.postimg.cc/gjRLqjDk/0193a76c-a9aa-40a8-a920-fe68e2857c3e.jpg','https://i.postimg.cc/NFh5MYch/09ce4efb-ed9b-494f-ac9e-898ad180eed3.jpg','https://i.postimg.cc/vHs4wQhf/0baf8534-be24-4784-bc4b-7f70ccca7dcd.jpg','https://i.postimg.cc/bYbZ5Gxq/0edbb5a1-2a3b-4350-b4d9-7d94a23a248e.jpg',_0x12a0a1(0x24f),_0x12a0a1(0x1d2),_0x12a0a1(0x1fd),_0x12a0a1(0x29d),'https://i.postimg.cc/7L6CtmVR/43dec306-96d9-4aea-9916-48d02c001ed5.jpg',_0x12a0a1(0x19f),'https://i.postimg.cc/7hgbJcH5/5ca1adc3-757d-4043-beed-e8f37c622050.jpg',_0x12a0a1(0x23e),_0x12a0a1(0x278),_0x12a0a1(0x282),_0x12a0a1(0x1b0),_0x12a0a1(0x283),'https://i.postimg.cc/ZKtdYPb9/99b214a7-06cf-4c90-988a-7070d6652d5c.jpg',_0x12a0a1(0x1fc),'https://i.postimg.cc/Z5L3M9hW/Atin.jpg',_0x12a0a1(0x227),_0x12a0a1(0x1c9),_0x12a0a1(0x258),_0x12a0a1(0x1ce),_0x12a0a1(0x1ae),_0x12a0a1(0x1f5),_0x12a0a1(0x28d),'https://i.postimg.cc/9FYrWvgS/christy-1.jpg','https://i.postimg.cc/pd4dGxy9/Christy-1.jpg',_0x12a0a1(0x2af),'https://i.postimg.cc/CKz1sdMT/christy-jkt48-1.jpg',_0x12a0a1(0x1bd),_0x12a0a1(0x214),_0x12a0a1(0x1fe),'https://i.postimg.cc/SKyR2V3s/e3b08bda-5f7f-4a1b-91be-254fad708698.jpg','https://i.postimg.cc/fR7kR1Hp/e9fb88d4-abbc-4fc3-a61e-091b448510e6.jpg','https://i.postimg.cc/wTm7S1D6/fd0e1f42-2e5b-46ea-bd5a-5b0f809a0b92.jpg','https://i.postimg.cc/Bb8XZ6yB/foto-freya-jkt48-kece.jpg',_0x12a0a1(0x223),'https://i.postimg.cc/wv41dJWB/Freya-Jayawardana.jpg',_0x12a0a1(0x215),_0x12a0a1(0x1f9),_0x12a0a1(0x1e4),_0x12a0a1(0x245),_0x12a0a1(0x235),_0x12a0a1(0x1ac),_0x12a0a1(0x25f),'https://i.postimg.cc/0QkSv9PV/Michie-jkt48-1.jpg',_0x12a0a1(0x2b4),_0x12a0a1(0x234),'https://i.postimg.cc/FH0kJYKP/Michie-jkt48-Spider-girl.jpg'],_0x110695=_0x201469[Math[_0x12a0a1(0x195)](Math['random']()*_0x201469[_0x12a0a1(0x1e7)])],_0x38167f={'url':_0x110695,'method':_0x12a0a1(0x19d),'encoding':null};request(_0x38167f,function(_0x10a16e,_0x3abb72,_0x3f0f98){var _0x18cb8a=_0x12a0a1;_0x33374d['set']('Content-Type',_0x18cb8a(0x229)),_0x33374d[_0x18cb8a(0x20d)](_0x3f0f98);}),limitAdd(_0x3b02e3);}),router['get'](_0x24c76f(0x1f7),async(_0x464917,_0x1453e9,_0x3f8a4c)=>{var _0x2a4c24=_0x24c76f,_0x3d4a04=_0x464917['query'][_0x2a4c24(0x1b3)],_0x11e572=_0x464917['query'][_0x2a4c24(0x265)];if(!_0x3d4a04)return _0x1453e9[_0x2a4c24(0x212)](loghandler[_0x2a4c24(0x290)]);if(!_0x11e572)return _0x1453e9[_0x2a4c24(0x212)]({'status':![],'creator':''+creator,'message':'masukan\x20parameter\x20url'});const _0x215228=await cekKey(_0x3d4a04);if(!_0x215228)return _0x1453e9[_0x2a4c24(0x204)](0x193)['send']({'status':0x193,'message':_0x2a4c24(0x273)+_0x3d4a04+_0x2a4c24(0x2a2)+_0x464917['hostname']+_0x2a4c24(0x224),'result':_0x2a4c24(0x291)});let _0x25ac6f=await isLimit(_0x3d4a04);if(_0x25ac6f)return _0x1453e9['status'](0x193)[_0x2a4c24(0x20d)]({'status':0x193,'message':_0x2a4c24(0x207)});const _0xeaf514=await scr['savefrom'](_0x11e572);_0x1453e9[_0x2a4c24(0x212)]({'result':_0xeaf514})[_0x2a4c24(0x26b)](_0x2ecfa5=>{var _0x176dae=_0x2a4c24;console['log'](_0x2ecfa5),_0x1453e9[_0x176dae(0x212)](loghandler[_0x176dae(0x291)]);}),limitAdd(_0x3d4a04);}),router[_0x24c76f(0x24b)](_0x24c76f(0x1ad),async(_0x4f944e,_0x1494ee,_0x331482)=>{var _0x39a04a=_0x24c76f,_0x414fda=_0x4f944e[_0x39a04a(0x289)][_0x39a04a(0x1b3)],_0x38b60a=_0x4f944e[_0x39a04a(0x289)][_0x39a04a(0x265)];if(!_0x414fda)return _0x1494ee[_0x39a04a(0x212)](loghandler[_0x39a04a(0x290)]);if(!_0x38b60a)return _0x1494ee[_0x39a04a(0x212)]({'status':![],'creator':''+creator,'message':'masukan\x20parameter\x20username'});const _0x574a5f=await cekKey(_0x414fda);if(!_0x574a5f)return _0x1494ee[_0x39a04a(0x204)](0x193)[_0x39a04a(0x20d)]({'status':0x193,'message':_0x39a04a(0x273)+_0x414fda+_0x39a04a(0x2a2)+_0x4f944e[_0x39a04a(0x28f)]+'/users/signup','result':'error'});let _0x33200f=await isLimit(_0x414fda);if(_0x33200f)return _0x1494ee[_0x39a04a(0x204)](0x193)[_0x39a04a(0x20d)]({'status':0x193,'message':_0x39a04a(0x207)});let _0x218568=await scr[_0x39a04a(0x27d)](_0x38b60a)[_0x39a04a(0x26b)](async _0x2b579d=>await scr[_0x39a04a(0x19c)](_0x38b60a))['catch'](async _0x4ed9db=>await scr[_0x39a04a(0x25c)](_0x38b60a))[_0x39a04a(0x26b)](async _0x55c8dd=>await scr[_0x39a04a(0x2b6)](_0x38b60a));var _0x20b375=_0x218568;_0x1494ee[_0x39a04a(0x212)]({'result':_0x20b375})[_0x39a04a(0x26b)](_0x3f22d2=>{var _0x6b5a27=_0x39a04a;console[_0x6b5a27(0x29c)](_0x3f22d2),_0x1494ee[_0x6b5a27(0x212)](loghandler[_0x6b5a27(0x291)]);}),limitAdd(_0x414fda);}),router[_0x24c76f(0x24b)](_0x24c76f(0x217),async(_0x3c90ce,_0x58d0b2,_0x1f1127)=>{var _0x1f500d=_0x24c76f,_0x12434a=_0x3c90ce[_0x1f500d(0x289)][_0x1f500d(0x1b3)],_0xe8e3a7=_0x3c90ce[_0x1f500d(0x289)]['q'];if(!_0x12434a)return _0x58d0b2['json'](loghandler[_0x1f500d(0x290)]);if(!_0xe8e3a7)return _0x58d0b2[_0x1f500d(0x212)]({'status':![],'creator':''+creator,'message':_0x1f500d(0x275)});const _0xb24142=await cekKey(_0x12434a);if(!_0xb24142)return _0x58d0b2[_0x1f500d(0x204)](0x193)[_0x1f500d(0x20d)]({'status':0x193,'message':'apikey\x20'+_0x12434a+_0x1f500d(0x2a2)+_0x3c90ce['hostname']+_0x1f500d(0x224),'result':_0x1f500d(0x291)});let _0x411082=await isLimit(_0x12434a);if(_0x411082)return _0x58d0b2[_0x1f500d(0x204)](0x193)[_0x1f500d(0x20d)]({'status':0x193,'message':_0x1f500d(0x207)});scr[_0x1f500d(0x1ee)](_0xe8e3a7)[_0x1f500d(0x21b)](_0x55b8a4=>{var _0x1f1546=_0x55b8a4;_0x58d0b2['json']({'result':_0x1f1546});})['catch'](_0x532e95=>{var _0x1e5f25=_0x1f500d;console['log'](_0x532e95),_0x58d0b2[_0x1e5f25(0x212)](loghandler[_0x1e5f25(0x291)]);}),limitAdd(_0x12434a);}),router[_0x24c76f(0x24b)](_0x24c76f(0x24c),async(_0x2d5f3f,_0x48a92e,_0x2416a8)=>{var _0x3b6f81=_0x24c76f,_0x5a8a7f=_0x2d5f3f[_0x3b6f81(0x289)]['apikey'],_0x2b58d6=_0x2d5f3f[_0x3b6f81(0x289)][_0x3b6f81(0x265)];if(!_0x5a8a7f)return _0x48a92e['json'](loghandler[_0x3b6f81(0x290)]);if(!_0x2b58d6)return _0x48a92e[_0x3b6f81(0x212)]({'status':![],'creator':''+creator,'message':_0x3b6f81(0x1e3)});const _0x1e1da3=await cekKey(_0x5a8a7f);if(!_0x1e1da3)return _0x48a92e[_0x3b6f81(0x204)](0x193)[_0x3b6f81(0x20d)]({'status':0x193,'message':_0x3b6f81(0x273)+_0x5a8a7f+_0x3b6f81(0x2a2)+_0x2d5f3f['hostname']+_0x3b6f81(0x224),'result':'error'});let _0x59b8c1=await isLimit(_0x5a8a7f);if(_0x59b8c1)return _0x48a92e[_0x3b6f81(0x204)](0x193)[_0x3b6f81(0x20d)]({'status':0x193,'message':_0x3b6f81(0x207)});let _0x5643d3=await scr[_0x3b6f81(0x1d6)](_0x2b58d6)[_0x3b6f81(0x26b)](async _0x1752a4=>await scr[_0x3b6f81(0x200)](_0x2b58d6));var _0x3ad5f0=_0x5643d3;_0x48a92e['json']({'result':_0x3ad5f0})['catch'](_0x1ef77d=>{var _0xf89261=_0x3b6f81;console[_0xf89261(0x29c)](_0x1ef77d),_0x48a92e[_0xf89261(0x212)](loghandler[_0xf89261(0x291)]);}),limitAdd(_0x5a8a7f);}),router['get']('/download/ytmp3',async(_0x1dbcea,_0x1c2259,_0x5ca85c)=>{var _0x4e71d3=_0x24c76f,_0x54f8d5=_0x1dbcea[_0x4e71d3(0x289)][_0x4e71d3(0x1b3)],_0x60b9ac=_0x1dbcea[_0x4e71d3(0x289)][_0x4e71d3(0x265)];if(!_0x54f8d5)return _0x1c2259[_0x4e71d3(0x212)](loghandler['noapikey']);if(!_0x60b9ac)return _0x1c2259[_0x4e71d3(0x212)]({'status':![],'creator':''+creator,'message':'masukan\x20parameter\x20url'});const _0x3727a6=await cekKey(_0x54f8d5);if(!_0x3727a6)return _0x1c2259['status'](0x193)[_0x4e71d3(0x20d)]({'status':0x193,'message':_0x4e71d3(0x273)+_0x54f8d5+_0x4e71d3(0x2a2)+_0x1dbcea[_0x4e71d3(0x28f)]+'/users/signup','result':_0x4e71d3(0x291)});let _0x259679=await isLimit(_0x54f8d5);if(_0x259679)return _0x1c2259[_0x4e71d3(0x204)](0x193)[_0x4e71d3(0x20d)]({'status':0x193,'message':_0x4e71d3(0x207)});const {id:_0x4f2ffb,thumbnail:_0x3e8c25,audio:_0x393637,title:_0x1eb722}=await scr[_0x4e71d3(0x243)](_0x60b9ac);try{for(let _0x2b61d1 in _0x393637){audio=_0x393637[_0x2b61d1];let _0x16d8c5=await audio[_0x4e71d3(0x1de)]();_0x1c2259[_0x4e71d3(0x212)]({'id':_0x4f2ffb,'thumbnail':_0x3e8c25,'title':_0x1eb722,'size':audio[_0x4e71d3(0x2ae)],'download':_0x16d8c5});}}catch{console[_0x4e71d3(0x29c)](e),_0x1c2259[_0x4e71d3(0x212)](loghandler[_0x4e71d3(0x291)]);}limitAdd(_0x54f8d5);}),router[_0x24c76f(0x24b)](_0x24c76f(0x1d1),async(_0x476b25,_0x3f4b95,_0x5770c7)=>{var _0x5e9c32=_0x24c76f,_0x1f97f1=_0x476b25[_0x5e9c32(0x289)]['apikey'],_0x2ba6b4=_0x476b25[_0x5e9c32(0x289)]['url'];if(!_0x1f97f1)return _0x3f4b95[_0x5e9c32(0x212)](loghandler[_0x5e9c32(0x290)]);if(!_0x2ba6b4)return _0x3f4b95[_0x5e9c32(0x212)]({'status':![],'creator':''+creator,'message':_0x5e9c32(0x1e3)});const _0x40ac35=await cekKey(_0x1f97f1);if(!_0x40ac35)return _0x3f4b95[_0x5e9c32(0x204)](0x193)['send']({'status':0x193,'message':'apikey\x20'+_0x1f97f1+'\x20not\x20found,\x20please\x20register\x20first!\x20https://'+_0x476b25[_0x5e9c32(0x28f)]+_0x5e9c32(0x224),'result':'error'});let _0x5358c3=await isLimit(_0x1f97f1);if(_0x5358c3)return _0x3f4b95['status'](0x193)['send']({'status':0x193,'message':_0x5e9c32(0x207)});const {id:_0x41b7c4,thumbnail:_0x55f252,video:_0xd804c1,title:_0x5557c7}=await scr[_0x5e9c32(0x243)](_0x2ba6b4);try{for(let _0x1ee1ba in _0xd804c1){video=_0xd804c1[_0x1ee1ba];let _0x235346=await video[_0x5e9c32(0x1de)]();_0x3f4b95[_0x5e9c32(0x212)]({'id':_0x41b7c4,'thumbnail':_0x55f252,'title':_0x5557c7,'size':video['fileSize'],'download':_0x235346});}}catch{console[_0x5e9c32(0x29c)](e),_0x3f4b95['json'](loghandler['error']);}limitAdd(_0x1f97f1);}),router[_0x24c76f(0x24b)](_0x24c76f(0x1b5),async(_0x120487,_0x11c907,_0x2ef648)=>{var _0x3a456b=_0x24c76f,_0x1bafef=_0x120487[_0x3a456b(0x289)][_0x3a456b(0x1b3)],_0x10b882=_0x120487[_0x3a456b(0x289)]['type'];if(!_0x1bafef)return _0x11c907[_0x3a456b(0x212)](loghandler[_0x3a456b(0x290)]);if(!_0x10b882)return _0x11c907[_0x3a456b(0x212)]({'status':![],'creator':''+creator,'message':_0x3a456b(0x1cf)});const _0xbca032=await cekKey(_0x1bafef);if(!_0xbca032)return _0x11c907[_0x3a456b(0x204)](0x193)[_0x3a456b(0x20d)]({'status':0x193,'message':'apikey\x20'+_0x1bafef+'\x20not\x20found,\x20please\x20register\x20first!\x20https://'+_0x120487['hostname']+_0x3a456b(0x224),'result':_0x3a456b(0x291)});let _0x279846=await isLimit(_0x1bafef);if(_0x279846)return _0x11c907[_0x3a456b(0x204)](0x193)['send']({'status':0x193,'message':'your\x20limit\x20has\x20been\x20exhausted,\x20reset\x20every\x2012\x20PM'});fetch(encodeURI(_0x3a456b(0x233)))[_0x3a456b(0x21b)](_0x3b4514=>_0x3b4514[_0x3a456b(0x212)]())[_0x3a456b(0x21b)](_0x31b42f=>{var _0x114f80=_0x3a456b,_0x503a6b=_0x31b42f;_0x11c907[_0x114f80(0x212)]({'result':_0x503a6b});})[_0x3a456b(0x26b)](_0x190465=>{var _0x1595d7=_0x3a456b;console[_0x1595d7(0x29c)](_0x190465),_0x11c907['json'](loghandler['error']);}),limitAdd(_0x1bafef);}),router[_0x24c76f(0x24b)](_0x24c76f(0x1f4),async(_0x476887,_0xe7934c,_0x5b3dd2)=>{var _0x43e98f=_0x24c76f,_0x3614e7=_0x476887[_0x43e98f(0x289)][_0x43e98f(0x1b3)],_0x28b13a=_0x476887[_0x43e98f(0x289)]['type'];if(!_0x3614e7)return _0xe7934c[_0x43e98f(0x212)](loghandler[_0x43e98f(0x290)]);if(!_0x28b13a)return _0xe7934c[_0x43e98f(0x212)]({'status':![],'creator':''+creator,'message':_0x43e98f(0x1cf)});const _0x46b779=await cekKey(_0x3614e7);if(!_0x46b779)return _0xe7934c[_0x43e98f(0x204)](0x193)[_0x43e98f(0x20d)]({'status':0x193,'message':'apikey\x20'+_0x3614e7+'\x20not\x20found,\x20please\x20register\x20first!\x20https://'+_0x476887[_0x43e98f(0x28f)]+_0x43e98f(0x224),'result':'error'});let _0x5530ae=await isLimit(_0x3614e7);if(_0x5530ae)return _0xe7934c[_0x43e98f(0x204)](0x193)['send']({'status':0x193,'message':'your\x20limit\x20has\x20been\x20exhausted,\x20reset\x20every\x2012\x20PM'});fetch(encodeURI('https://news-api-zhirrr.vercel.app/v1/cnbc-news'))[_0x43e98f(0x21b)](_0x437fb7=>_0x437fb7[_0x43e98f(0x212)]())['then'](_0x46a241=>{var _0x2ac0f2=_0x43e98f,_0x46a64a=_0x46a241;_0xe7934c[_0x2ac0f2(0x212)]({'result':_0x46a64a});})[_0x43e98f(0x26b)](_0x2b311c=>{var _0x5de775=_0x43e98f;console[_0x5de775(0x29c)](_0x2b311c),_0xe7934c[_0x5de775(0x212)](loghandler['error']);}),limitAdd(_0x3614e7);}),router['get'](_0x24c76f(0x247),async(_0x3e096a,_0x2adc7e,_0x5c9534)=>{var _0x46f5bd=_0x24c76f,_0x519090=_0x3e096a[_0x46f5bd(0x289)][_0x46f5bd(0x1b3)],_0x157081=_0x3e096a['query'][_0x46f5bd(0x25a)];if(!_0x519090)return _0x2adc7e[_0x46f5bd(0x212)](loghandler[_0x46f5bd(0x290)]);if(!_0x157081)return _0x2adc7e[_0x46f5bd(0x212)]({'status':![],'creator':''+creator,'message':_0x46f5bd(0x1cf)});const _0x3c9d66=await cekKey(_0x519090);if(!_0x3c9d66)return _0x2adc7e[_0x46f5bd(0x204)](0x193)[_0x46f5bd(0x20d)]({'status':0x193,'message':_0x46f5bd(0x273)+_0x519090+_0x46f5bd(0x2a2)+_0x3e096a[_0x46f5bd(0x28f)]+'/users/signup','result':_0x46f5bd(0x291)});let _0x4e00ba=await isLimit(_0x519090);if(_0x4e00ba)return _0x2adc7e['status'](0x193)['send']({'status':0x193,'message':_0x46f5bd(0x207)});fetch(encodeURI('https://news-api-zhirrr.vercel.app/v1/republika-news'))[_0x46f5bd(0x21b)](_0x5003a9=>_0x5003a9[_0x46f5bd(0x212)]())[_0x46f5bd(0x21b)](_0x251082=>{var _0x224cc1=_0x46f5bd,_0x5a33ed=_0x251082;_0x2adc7e[_0x224cc1(0x212)]({'result':_0x5a33ed});})[_0x46f5bd(0x26b)](_0x34a9c9=>{var _0xa40700=_0x46f5bd;console['log'](_0x34a9c9),_0x2adc7e[_0xa40700(0x212)](loghandler[_0xa40700(0x291)]);}),limitAdd(_0x519090);}),router['get'](_0x24c76f(0x1ed),async(_0x5f4f4e,_0x3e64fe,_0x1fc88e)=>{var _0x968e4b=_0x24c76f,_0x587f52=_0x5f4f4e[_0x968e4b(0x289)][_0x968e4b(0x1b3)],_0x32b84b=_0x5f4f4e['query']['type'];if(!_0x587f52)return _0x3e64fe['json'](loghandler[_0x968e4b(0x290)]);if(!_0x32b84b)return _0x3e64fe[_0x968e4b(0x212)]({'status':![],'creator':''+creator,'message':_0x968e4b(0x1cf)});const _0x57ce97=await cekKey(_0x587f52);if(!_0x57ce97)return _0x3e64fe[_0x968e4b(0x204)](0x193)[_0x968e4b(0x20d)]({'status':0x193,'message':_0x968e4b(0x273)+_0x587f52+'\x20not\x20found,\x20please\x20register\x20first!\x20https://'+_0x5f4f4e[_0x968e4b(0x28f)]+'/users/signup','result':_0x968e4b(0x291)});let _0x3b69fc=await isLimit(_0x587f52);if(_0x3b69fc)return _0x3e64fe['status'](0x193)[_0x968e4b(0x20d)]({'status':0x193,'message':'your\x20limit\x20has\x20been\x20exhausted,\x20reset\x20every\x2012\x20PM'});fetch(encodeURI(_0x968e4b(0x237)+_0x32b84b))[_0x968e4b(0x21b)](_0x542dd5=>_0x542dd5['json']())['then'](_0x40288f=>{var _0x279cb2=_0x968e4b,_0x33593c=_0x40288f;_0x3e64fe[_0x279cb2(0x212)]({'author':creator,'result':_0x33593c});})[_0x968e4b(0x26b)](_0x5ea18b=>{var _0x9413c5=_0x968e4b;console[_0x9413c5(0x29c)](_0x5ea18b),_0x3e64fe[_0x9413c5(0x212)](loghandler[_0x9413c5(0x291)]);}),limitAdd(_0x587f52);}),router[_0x24c76f(0x24b)](_0x24c76f(0x1c3),async(_0x4bbd0d,_0x482ef3,_0x3a5b9f)=>{var _0x38cecc=_0x24c76f,_0x4dfe2d=_0x4bbd0d['query'][_0x38cecc(0x1b3)],_0x254174=_0x4bbd0d[_0x38cecc(0x289)][_0x38cecc(0x25a)];if(!_0x4dfe2d)return _0x482ef3[_0x38cecc(0x212)](loghandler['noapikey']);if(!_0x254174)return _0x482ef3[_0x38cecc(0x212)]({'status':![],'creator':''+creator,'message':_0x38cecc(0x1cf)});const _0x26edb=await cekKey(_0x4dfe2d);if(!_0x26edb)return _0x482ef3['status'](0x193)[_0x38cecc(0x20d)]({'status':0x193,'message':_0x38cecc(0x273)+_0x4dfe2d+'\x20not\x20found,\x20please\x20register\x20first!\x20https://'+_0x4bbd0d[_0x38cecc(0x28f)]+'/users/signup','result':_0x38cecc(0x291)});let _0x5f21ec=await isLimit(_0x4dfe2d);if(_0x5f21ec)return _0x482ef3['status'](0x193)[_0x38cecc(0x20d)]({'status':0x193,'message':_0x38cecc(0x207)});fetch(encodeURI(_0x38cecc(0x238)+_0x254174))[_0x38cecc(0x21b)](_0x5880b0=>_0x5880b0[_0x38cecc(0x212)]())[_0x38cecc(0x21b)](_0x2133e1=>{var _0x372777=_0x2133e1;_0x482ef3['json']({'author':creator,'result':_0x372777});})[_0x38cecc(0x26b)](_0x87b3fa=>{var _0x13ac98=_0x38cecc;console['log'](_0x87b3fa),_0x482ef3[_0x13ac98(0x212)](loghandler['error']);}),limitAdd(_0x4dfe2d);}),router[_0x24c76f(0x24b)]('/news/kumparan',async(_0x918583,_0xf1b92,_0x38a113)=>{var _0x1beecf=_0x24c76f,_0x138184=_0x918583['query']['apikey'],_0x3f69d7=_0x918583[_0x1beecf(0x289)][_0x1beecf(0x25a)];if(!_0x138184)return _0xf1b92[_0x1beecf(0x212)](loghandler[_0x1beecf(0x290)]);if(!_0x3f69d7)return _0xf1b92['json']({'status':![],'creator':''+creator,'message':'masukan\x20parameter\x20type'});const _0x1d39f1=await cekKey(_0x138184);if(!_0x1d39f1)return _0xf1b92['status'](0x193)[_0x1beecf(0x20d)]({'status':0x193,'message':_0x1beecf(0x273)+_0x138184+'\x20not\x20found,\x20please\x20register\x20first!\x20https://'+_0x918583[_0x1beecf(0x28f)]+'/users/signup','result':_0x1beecf(0x291)});let _0xcac485=await isLimit(_0x138184);if(_0xcac485)return _0xf1b92['status'](0x193)['send']({'status':0x193,'message':_0x1beecf(0x207)});fetch(encodeURI(_0x1beecf(0x25b)))[_0x1beecf(0x21b)](_0x56604f=>_0x56604f[_0x1beecf(0x212)]())[_0x1beecf(0x21b)](_0x421727=>{var _0x2128ac=_0x1beecf,_0x208279=_0x421727;_0xf1b92[_0x2128ac(0x212)]({'author':creator,'result':_0x208279});})[_0x1beecf(0x26b)](_0x1bb356=>{var _0x36a403=_0x1beecf;console['log'](_0x1bb356),_0xf1b92[_0x36a403(0x212)](loghandler[_0x36a403(0x291)]);}),limitAdd(_0x138184);}),router[_0x24c76f(0x24b)](_0x24c76f(0x1a7),async(_0xe512b8,_0x4da0dc,_0x57347a)=>{var _0x35a180=_0x24c76f,_0x4e69a2=_0xe512b8[_0x35a180(0x289)][_0x35a180(0x1b3)],_0x39107d=_0xe512b8[_0x35a180(0x289)][_0x35a180(0x1e5)];if(!_0x4e69a2)return _0x4da0dc['json'](loghandler[_0x35a180(0x290)]);if(!_0x39107d)return _0x4da0dc[_0x35a180(0x212)]({'status':![],'creator':''+creator,'message':'masukan\x20parameter\x20text'});const _0x5ee2a7=await cekKey(_0x4e69a2);if(!_0x5ee2a7)return _0x4da0dc[_0x35a180(0x204)](0x193)[_0x35a180(0x20d)]({'status':0x193,'message':_0x35a180(0x273)+_0x4e69a2+_0x35a180(0x2a2)+_0xe512b8[_0x35a180(0x28f)]+_0x35a180(0x224),'result':_0x35a180(0x291)});let _0x416ab0=await isLimit(_0x4e69a2);if(_0x416ab0)return _0x4da0dc[_0x35a180(0x204)](0x193)['send']({'status':0x193,'message':_0x35a180(0x207)});oxy(_0x35a180(0x28a),[_0x39107d])[_0x35a180(0x21b)](_0x47cf39=>{var _0x296f59=_0x35a180;_0x4da0dc['set']({'Content-Type':_0x296f59(0x229)}),_0x4da0dc['send'](_0x47cf39);})[_0x35a180(0x26b)](_0x168640=>{var _0x29a7a8=_0x35a180;_0x4da0dc[_0x29a7a8(0x212)](loghandler[_0x29a7a8(0x291)]);}),limitAdd(_0x4e69a2);}),router[_0x24c76f(0x24b)](_0x24c76f(0x293),async(_0x45be99,_0x41dc69,_0x491edf)=>{var _0x411679=_0x24c76f,_0x20c7c0=_0x45be99[_0x411679(0x289)][_0x411679(0x1b3)],_0x44156a=_0x45be99['query']['text'];if(!_0x20c7c0)return _0x41dc69[_0x411679(0x212)](loghandler[_0x411679(0x290)]);if(!_0x44156a)return _0x41dc69[_0x411679(0x212)]({'status':![],'creator':''+creator,'message':_0x411679(0x1ab)});const _0x4d496c=await cekKey(_0x20c7c0);if(!_0x4d496c)return _0x41dc69['status'](0x193)[_0x411679(0x20d)]({'status':0x193,'message':_0x411679(0x273)+_0x20c7c0+_0x411679(0x2a2)+_0x45be99[_0x411679(0x28f)]+_0x411679(0x224),'result':_0x411679(0x291)});let _0x2ab0da=await isLimit(_0x20c7c0);if(_0x2ab0da)return _0x41dc69[_0x411679(0x204)](0x193)[_0x411679(0x20d)]({'status':0x193,'message':_0x411679(0x207)});oxy(_0x411679(0x279),[_0x44156a])['then'](_0x1cf5b1=>{var _0x4f956c=_0x411679;_0x41dc69[_0x4f956c(0x218)]({'Content-Type':'image/png'}),_0x41dc69[_0x4f956c(0x20d)](_0x1cf5b1);})[_0x411679(0x26b)](_0x5ab2e2=>{var _0x41c345=_0x411679;_0x41dc69[_0x41c345(0x212)](loghandler['error']);}),limitAdd(_0x20c7c0);}),router['get'](_0x24c76f(0x23c),async(_0x529ce6,_0x192fbe,_0x15f0af)=>{var _0x2b6e3b=_0x24c76f,_0x5de65f=_0x529ce6[_0x2b6e3b(0x289)][_0x2b6e3b(0x1b3)],_0x2650c2=_0x529ce6[_0x2b6e3b(0x289)][_0x2b6e3b(0x1e5)];if(!_0x5de65f)return _0x192fbe[_0x2b6e3b(0x212)](loghandler[_0x2b6e3b(0x290)]);if(!_0x2650c2)return _0x192fbe[_0x2b6e3b(0x212)]({'status':![],'creator':''+creator,'message':_0x2b6e3b(0x1ab)});const _0x5fe428=await cekKey(_0x5de65f);if(!_0x5fe428)return _0x192fbe[_0x2b6e3b(0x204)](0x193)[_0x2b6e3b(0x20d)]({'status':0x193,'message':_0x2b6e3b(0x273)+_0x5de65f+_0x2b6e3b(0x2a2)+_0x529ce6['hostname']+_0x2b6e3b(0x224),'result':'error'});let _0x3d696b=await isLimit(_0x5de65f);if(_0x3d696b)return _0x192fbe['status'](0x193)['send']({'status':0x193,'message':_0x2b6e3b(0x207)});oxy(_0x2b6e3b(0x1e0),[_0x2650c2])['then'](_0x2dbda0=>{var _0x5e452f=_0x2b6e3b;_0x192fbe[_0x5e452f(0x218)]({'Content-Type':_0x5e452f(0x229)}),_0x192fbe[_0x5e452f(0x20d)](_0x2dbda0);})[_0x2b6e3b(0x26b)](_0x46db8d=>{var _0x4702d5=_0x2b6e3b;_0x192fbe[_0x4702d5(0x212)](loghandler[_0x4702d5(0x291)]);}),limitAdd(_0x5de65f);}),router[_0x24c76f(0x24b)](_0x24c76f(0x22b),async(_0x286f22,_0x66e740,_0x329655)=>{var _0x3db33=_0x24c76f,_0x16efdb=_0x286f22[_0x3db33(0x289)][_0x3db33(0x1b3)],_0x150fc1=_0x286f22[_0x3db33(0x289)][_0x3db33(0x1e5)];if(!_0x16efdb)return _0x66e740['json'](loghandler[_0x3db33(0x290)]);if(!_0x150fc1)return _0x66e740[_0x3db33(0x212)]({'status':![],'creator':''+creator,'message':_0x3db33(0x1ab)});const _0x34e683=await cekKey(_0x16efdb);if(!_0x34e683)return _0x66e740[_0x3db33(0x204)](0x193)[_0x3db33(0x20d)]({'status':0x193,'message':_0x3db33(0x273)+_0x16efdb+_0x3db33(0x2a2)+_0x286f22[_0x3db33(0x28f)]+_0x3db33(0x224),'result':_0x3db33(0x291)});let _0x3f80cd=await isLimit(_0x16efdb);if(_0x3f80cd)return _0x66e740['status'](0x193)['send']({'status':0x193,'message':_0x3db33(0x207)});oxy(_0x3db33(0x264),[_0x150fc1])[_0x3db33(0x21b)](_0x4e8998=>{var _0x19c6bb=_0x3db33;_0x66e740[_0x19c6bb(0x218)]({'Content-Type':_0x19c6bb(0x229)}),_0x66e740[_0x19c6bb(0x20d)](_0x4e8998);})[_0x3db33(0x26b)](_0x38e187=>{var _0x43c3db=_0x3db33;_0x66e740[_0x43c3db(0x212)](loghandler['error']);}),limitAdd(_0x16efdb);}),router[_0x24c76f(0x24b)](_0x24c76f(0x29e),async(_0x12d6c9,_0x38fe4e,_0x3b000f)=>{var _0x31ff85=_0x24c76f,_0x5504c3=_0x12d6c9['query']['apikey'],_0x5251a8=_0x12d6c9[_0x31ff85(0x289)][_0x31ff85(0x1e5)],_0x47ce93=_0x12d6c9[_0x31ff85(0x289)][_0x31ff85(0x26a)];if(!_0x5504c3)return _0x38fe4e[_0x31ff85(0x212)](loghandler[_0x31ff85(0x290)]);if(!_0x5251a8||!_0x47ce93)return _0x38fe4e[_0x31ff85(0x212)]({'status':![],'creator':''+creator,'message':'masukan\x20parameter\x20text\x20&\x20text2'});const _0x2fe9e2=await cekKey(_0x5504c3);if(!_0x2fe9e2)return _0x38fe4e[_0x31ff85(0x204)](0x193)[_0x31ff85(0x20d)]({'status':0x193,'message':'apikey\x20'+_0x5504c3+_0x31ff85(0x2a2)+_0x12d6c9[_0x31ff85(0x28f)]+_0x31ff85(0x224),'result':_0x31ff85(0x291)});let _0x347436=await isLimit(_0x5504c3);if(_0x347436)return _0x38fe4e['status'](0x193)['send']({'status':0x193,'message':'your\x20limit\x20has\x20been\x20exhausted,\x20reset\x20every\x2012\x20PM'});oxy('https://photooxy.com/battlegrounds/make-wallpaper-battlegrounds-logo-text-146.html',[_0x5251a8,_0x47ce93])[_0x31ff85(0x21b)](_0x43bf51=>{var _0x4ec8ee=_0x31ff85;_0x38fe4e['set']({'Content-Type':_0x4ec8ee(0x229)}),_0x38fe4e['send'](_0x43bf51);})[_0x31ff85(0x26b)](_0x31b6de=>{var _0x336e90=_0x31ff85;_0x38fe4e[_0x336e90(0x212)](loghandler['error']);}),limitAdd(_0x5504c3);}),router[_0x24c76f(0x24b)](_0x24c76f(0x1bf),async(_0x4850cb,_0x23391a,_0x3e389d)=>{var _0x4350c3=_0x24c76f,_0x1b306f=_0x4850cb['query'][_0x4350c3(0x1b3)],_0x4ffe84=_0x4850cb[_0x4350c3(0x289)][_0x4350c3(0x1e5)];if(!_0x1b306f)return _0x23391a[_0x4350c3(0x212)](loghandler[_0x4350c3(0x290)]);if(!_0x4ffe84)return _0x23391a[_0x4350c3(0x212)]({'status':![],'creator':''+creator,'message':_0x4350c3(0x1ab)});const _0x654ec7=await cekKey(_0x1b306f);if(!_0x654ec7)return _0x23391a[_0x4350c3(0x204)](0x193)[_0x4350c3(0x20d)]({'status':0x193,'message':'apikey\x20'+_0x1b306f+_0x4350c3(0x2a2)+_0x4850cb[_0x4350c3(0x28f)]+_0x4350c3(0x224),'result':_0x4350c3(0x291)});let _0x7fac24=await isLimit(_0x1b306f);if(_0x7fac24)return _0x23391a['status'](0x193)[_0x4350c3(0x20d)]({'status':0x193,'message':'your\x20limit\x20has\x20been\x20exhausted,\x20reset\x20every\x2012\x20PM'});oxy(_0x4350c3(0x1fa),[_0x4ffe84])['then'](_0x5442ac=>{var _0x52e622=_0x4350c3;_0x23391a[_0x52e622(0x218)]({'Content-Type':_0x52e622(0x229)}),_0x23391a[_0x52e622(0x20d)](_0x5442ac);})[_0x4350c3(0x26b)](_0x33f023=>{var _0xe5fece=_0x4350c3;_0x23391a[_0xe5fece(0x212)](loghandler['error']);}),limitAdd(_0x1b306f);}),router['get'](_0x24c76f(0x199),async(_0x1aca6c,_0xb6f3a4,_0x56ce1f)=>{var _0x1929a6=_0x24c76f,_0x10d4bd=_0x1aca6c[_0x1929a6(0x289)][_0x1929a6(0x1b3)],_0x138c0c=_0x1aca6c[_0x1929a6(0x289)]['text'];if(!_0x10d4bd)return _0xb6f3a4[_0x1929a6(0x212)](loghandler[_0x1929a6(0x290)]);if(!_0x138c0c)return _0xb6f3a4['json']({'status':![],'creator':''+creator,'message':'masukan\x20parameter\x20text'});const _0x2cef13=await cekKey(_0x10d4bd);if(!_0x2cef13)return _0xb6f3a4[_0x1929a6(0x204)](0x193)[_0x1929a6(0x20d)]({'status':0x193,'message':_0x1929a6(0x273)+_0x10d4bd+_0x1929a6(0x2a2)+_0x1aca6c[_0x1929a6(0x28f)]+_0x1929a6(0x224),'result':'error'});let _0x515c42=await isLimit(_0x10d4bd);if(_0x515c42)return _0xb6f3a4[_0x1929a6(0x204)](0x193)['send']({'status':0x193,'message':_0x1929a6(0x207)});oxy(_0x1929a6(0x297),[_0x138c0c])[_0x1929a6(0x21b)](_0x5d977c=>{var _0x280b1e=_0x1929a6;_0xb6f3a4[_0x280b1e(0x218)]({'Content-Type':_0x280b1e(0x229)}),_0xb6f3a4['send'](_0x5d977c);})[_0x1929a6(0x26b)](_0x5caac9=>{var _0x1b44ea=_0x1929a6;_0xb6f3a4[_0x1b44ea(0x212)](loghandler['error']);}),limitAdd(_0x10d4bd);}),router[_0x24c76f(0x24b)]('/photooxy/metallic',async(_0x4bec5f,_0x11a553,_0x557c60)=>{var _0x5ec08e=_0x24c76f,_0x253a8f=_0x4bec5f[_0x5ec08e(0x289)]['apikey'],_0x369197=_0x4bec5f[_0x5ec08e(0x289)][_0x5ec08e(0x1e5)];if(!_0x253a8f)return _0x11a553[_0x5ec08e(0x212)](loghandler['noapikey']);if(!_0x369197)return _0x11a553[_0x5ec08e(0x212)]({'status':![],'creator':''+creator,'message':_0x5ec08e(0x1ab)});const _0x160662=await cekKey(_0x253a8f);if(!_0x160662)return _0x11a553[_0x5ec08e(0x204)](0x193)[_0x5ec08e(0x20d)]({'status':0x193,'message':'apikey\x20'+_0x253a8f+_0x5ec08e(0x2a2)+_0x4bec5f[_0x5ec08e(0x28f)]+_0x5ec08e(0x224),'result':_0x5ec08e(0x291)});let _0x9a7c8f=await isLimit(_0x253a8f);if(_0x9a7c8f)return _0x11a553[_0x5ec08e(0x204)](0x193)[_0x5ec08e(0x20d)]({'status':0x193,'message':'your\x20limit\x20has\x20been\x20exhausted,\x20reset\x20every\x2012\x20PM'});oxy(_0x5ec08e(0x27a),[_0x369197])[_0x5ec08e(0x21b)](_0x5154e7=>{var _0x2ba3fb=_0x5ec08e;_0x11a553['set']({'Content-Type':'image/png'}),_0x11a553[_0x2ba3fb(0x20d)](_0x5154e7);})[_0x5ec08e(0x26b)](_0x2688da=>{var _0x42d013=_0x5ec08e;_0x11a553[_0x42d013(0x212)](loghandler[_0x42d013(0x291)]);}),limitAdd(_0x253a8f);}),router[_0x24c76f(0x24b)](_0x24c76f(0x2a4),async(_0x34ddc1,_0x35ad09,_0x11df0e)=>{var _0x32a92e=_0x24c76f,_0x4bb70b=_0x34ddc1['query'][_0x32a92e(0x1b3)],_0x19b637=_0x34ddc1[_0x32a92e(0x289)][_0x32a92e(0x289)];if(!_0x4bb70b)return _0x35ad09[_0x32a92e(0x212)](loghandler[_0x32a92e(0x290)]);if(!_0x19b637)return _0x35ad09[_0x32a92e(0x212)]({'status':![],'creator':''+creator,'message':'masukan\x20parameter\x20query'});const _0xc599fb=await cekKey(_0x4bb70b);if(!_0xc599fb)return _0x35ad09[_0x32a92e(0x204)](0x193)[_0x32a92e(0x20d)]({'status':0x193,'message':_0x32a92e(0x273)+_0x4bb70b+_0x32a92e(0x2a2)+_0x34ddc1['hostname']+_0x32a92e(0x224),'result':_0x32a92e(0x291)});let _0x54484f=await isLimit(_0x4bb70b);if(_0x54484f)return _0x35ad09[_0x32a92e(0x204)](0x193)[_0x32a92e(0x20d)]({'status':0x193,'message':_0x32a92e(0x207)});scr[_0x32a92e(0x240)](_0x19b637)[_0x32a92e(0x21b)](_0x5519b0=>{var _0x1f3aaf=_0x32a92e,_0x5519b0=_0x5519b0;_0x35ad09[_0x1f3aaf(0x212)]({'status':0xc8,'data':_0x5519b0});})[_0x32a92e(0x26b)](_0x5962e8=>{var _0x16dcd7=_0x32a92e;console[_0x16dcd7(0x29c)](_0x5962e8),_0x35ad09['json'](loghandler['error']);}),limitAdd(_0x4bb70b);}),router[_0x24c76f(0x24b)](_0x24c76f(0x225),async(_0x120b0a,_0x400419,_0x347393)=>{var _0x391261=_0x24c76f,_0x3481ec=_0x120b0a[_0x391261(0x289)][_0x391261(0x1b3)],_0x4defc6=_0x120b0a[_0x391261(0x289)]['query'];if(!_0x3481ec)return _0x400419['json'](loghandler[_0x391261(0x290)]);if(!_0x4defc6)return _0x400419[_0x391261(0x212)]({'status':![],'creator':''+creator,'message':_0x391261(0x213)});const _0x4ebb06=await cekKey(_0x3481ec);if(!_0x4ebb06)return _0x400419['status'](0x193)[_0x391261(0x20d)]({'status':0x193,'message':'apikey\x20'+_0x3481ec+_0x391261(0x2a2)+_0x120b0a[_0x391261(0x28f)]+_0x391261(0x224),'result':_0x391261(0x291)});let _0x232c2f=await isLimit(_0x3481ec);if(_0x232c2f)return _0x400419[_0x391261(0x204)](0x193)[_0x391261(0x20d)]({'status':0x193,'message':_0x391261(0x207)});scr[_0x391261(0x1a2)](_0x4defc6)[_0x391261(0x21b)](_0x1c8fdc=>{var _0x44f244=_0x1c8fdc;_0x400419['json']({'result':_0x44f244});})[_0x391261(0x26b)](_0x37623e=>{var _0x20f3d6=_0x391261;console[_0x20f3d6(0x29c)](_0x37623e),_0x400419[_0x20f3d6(0x212)](loghandler[_0x20f3d6(0x291)]);}),limitAdd(_0x3481ec);}),router['get'](_0x24c76f(0x1a9),async(_0xfc062c,_0x5e54c4,_0xd4efd2)=>{var _0x5b74fb=_0x24c76f,_0x5a5476=_0xfc062c['query'][_0x5b74fb(0x1b3)],_0x5ece62=_0xfc062c[_0x5b74fb(0x289)][_0x5b74fb(0x289)];if(!_0x5a5476)return _0x5e54c4[_0x5b74fb(0x212)](loghandler[_0x5b74fb(0x290)]);if(!_0x5ece62)return _0x5e54c4[_0x5b74fb(0x212)]({'status':![],'creator':''+creator,'message':_0x5b74fb(0x213)});const _0x103d16=await cekKey(_0x5a5476);if(!_0x103d16)return _0x5e54c4[_0x5b74fb(0x204)](0x193)['send']({'status':0x193,'message':_0x5b74fb(0x273)+_0x5a5476+'\x20not\x20found,\x20please\x20register\x20first!\x20https://'+_0xfc062c[_0x5b74fb(0x28f)]+_0x5b74fb(0x224),'result':_0x5b74fb(0x291)});let _0x4a1ae9=await isLimit(_0x5a5476);if(_0x4a1ae9)return _0x5e54c4[_0x5b74fb(0x204)](0x193)[_0x5b74fb(0x20d)]({'status':0x193,'message':'your\x20limit\x20has\x20been\x20exhausted,\x20reset\x20every\x2012\x20PM'});scr['pinterest'](_0x5ece62)[_0x5b74fb(0x21b)](_0x343982=>{var _0x26c7bb=_0x343982;_0x5e54c4['json']({'result':_0x26c7bb});})[_0x5b74fb(0x26b)](_0x392cbb=>{var _0x5b6e79=_0x5b74fb;console['log'](_0x392cbb),_0x5e54c4['json'](loghandler[_0x5b6e79(0x291)]);}),limitAdd(_0x5a5476);}),router['get'](_0x24c76f(0x20b),async(_0x2e65d3,_0x2b15b9,_0x505657)=>{var _0x1559c5=_0x24c76f,_0x130d8b=_0x2e65d3[_0x1559c5(0x289)][_0x1559c5(0x1b3)],_0x5aeeea=_0x2e65d3[_0x1559c5(0x289)][_0x1559c5(0x1df)];if(!_0x130d8b)return _0x2b15b9[_0x1559c5(0x212)](loghandler[_0x1559c5(0x290)]);const _0x53b864=await cekKey(_0x130d8b);if(!_0x53b864)return _0x2b15b9[_0x1559c5(0x204)](0x193)[_0x1559c5(0x20d)]({'status':0x193,'message':_0x1559c5(0x273)+_0x130d8b+_0x1559c5(0x2a2)+_0x2e65d3[_0x1559c5(0x28f)]+'/users/signup','result':_0x1559c5(0x291)});let _0x4b3339=await isLimit(_0x130d8b);if(_0x4b3339)return _0x2b15b9[_0x1559c5(0x204)](0x193)[_0x1559c5(0x20d)]({'status':0x193,'message':_0x1559c5(0x207)});fetch(encodeURI(_0x1559c5(0x196)))[_0x1559c5(0x21b)](_0x57957a=>_0x57957a[_0x1559c5(0x212)]())[_0x1559c5(0x21b)](_0x570196=>{var _0x1b008c=_0x1559c5,_0x368af5=_0x570196,_0x368af5=_0x570196[Math[_0x1b008c(0x195)](Math[_0x1b008c(0x1d7)]()*_0x570196[_0x1b008c(0x1e7)])],_0x2ef54d={'url':_0x368af5[_0x1b008c(0x265)],'method':_0x1b008c(0x19d),'encoding':null};request(_0x2ef54d,function(_0x5a6fa8,_0x330ab0,_0x54cee8){var _0x5901f1=_0x1b008c;_0x2b15b9[_0x5901f1(0x218)](_0x5901f1(0x29a),_0x5901f1(0x229)),_0x2b15b9[_0x5901f1(0x20d)](_0x54cee8);});}),limitAdd(_0x130d8b);}),router[_0x24c76f(0x24b)](_0x24c76f(0x22d),async(_0x5beb92,_0x41d971,_0x37e72c)=>{var _0x4685ba=_0x24c76f,_0x18f654=_0x5beb92[_0x4685ba(0x289)][_0x4685ba(0x1b3)],_0x2d70fd=_0x5beb92['query']['page'];if(!_0x18f654)return _0x41d971[_0x4685ba(0x212)](loghandler[_0x4685ba(0x290)]);const _0x33098e=await cekKey(_0x18f654);if(!_0x33098e)return _0x41d971[_0x4685ba(0x204)](0x193)[_0x4685ba(0x20d)]({'status':0x193,'message':'apikey\x20'+_0x18f654+'\x20not\x20found,\x20please\x20register\x20first!\x20https://'+_0x5beb92[_0x4685ba(0x28f)]+_0x4685ba(0x224),'result':_0x4685ba(0x291)});let _0x245503=await isLimit(_0x18f654);if(_0x245503)return _0x41d971[_0x4685ba(0x204)](0x193)['send']({'status':0x193,'message':_0x4685ba(0x207)});fetch(encodeURI(_0x4685ba(0x1af)))['then'](_0x2ebeea=>_0x2ebeea[_0x4685ba(0x212)]())[_0x4685ba(0x21b)](_0xdbb9c0=>{var _0x39d497=_0x4685ba,_0x16d961=_0xdbb9c0,_0x16d961=_0xdbb9c0[Math[_0x39d497(0x195)](Math['random']()*_0xdbb9c0['length'])],_0x475145={'url':_0x16d961[_0x39d497(0x265)],'method':_0x39d497(0x19d),'encoding':null};request(_0x475145,function(_0x4bd7c0,_0x530a15,_0x57c934){var _0xf69ac2=_0x39d497;_0x41d971[_0xf69ac2(0x218)]('Content-Type',_0xf69ac2(0x229)),_0x41d971[_0xf69ac2(0x20d)](_0x57c934);});}),limitAdd(_0x18f654);}),router[_0x24c76f(0x24b)](_0x24c76f(0x1a6),async(_0x5b0f8c,_0x49a3ea,_0x2b2d94)=>{var _0x5e3003=_0x24c76f,_0x1d3ef7=_0x5b0f8c['query'][_0x5e3003(0x1b3)];if(!_0x1d3ef7)return _0x49a3ea['json'](loghandler['noapikey']);const _0x4a7b29=await cekKey(_0x1d3ef7);if(!_0x4a7b29)return _0x49a3ea['status'](0x193)[_0x5e3003(0x20d)]({'status':0x193,'message':_0x5e3003(0x273)+_0x1d3ef7+_0x5e3003(0x2a2)+_0x5b0f8c[_0x5e3003(0x28f)]+_0x5e3003(0x224),'result':_0x5e3003(0x291)});let _0x42989f=await isLimit(_0x1d3ef7);if(_0x42989f)return _0x49a3ea[_0x5e3003(0x204)](0x193)['send']({'status':0x193,'message':_0x5e3003(0x207)});fetch(encodeURI(_0x5e3003(0x1f3)))['then'](_0xbcd279=>_0xbcd279['json']())[_0x5e3003(0x21b)](_0x28d9c7=>{var _0x37b69d=_0x5e3003,_0x1da0ed=_0x28d9c7,_0x1da0ed=_0x28d9c7[Math[_0x37b69d(0x195)](Math[_0x37b69d(0x1d7)]()*_0x28d9c7[_0x37b69d(0x1e7)])],_0x45438e={'url':_0x1da0ed['url'],'method':_0x37b69d(0x19d),'encoding':null};request(_0x45438e,function(_0x5d87b6,_0x29c204,_0x6871d2){var _0x948ce7=_0x37b69d;_0x49a3ea['set']('Content-Type','image/png'),_0x49a3ea[_0x948ce7(0x20d)](_0x6871d2);});}),limitAdd(_0x1d3ef7);}),router['get'](_0x24c76f(0x19b),async(_0x17a580,_0x2c5d7b,_0x436c34)=>{var _0x49d52c=_0x24c76f,_0x4441dc=_0x17a580['query'][_0x49d52c(0x1b3)];if(!_0x4441dc)return _0x2c5d7b['json'](loghandler[_0x49d52c(0x290)]);const _0x2e9edb=await cekKey(_0x4441dc);if(!_0x2e9edb)return _0x2c5d7b[_0x49d52c(0x204)](0x193)[_0x49d52c(0x20d)]({'status':0x193,'message':_0x49d52c(0x273)+_0x4441dc+_0x49d52c(0x2a2)+_0x17a580[_0x49d52c(0x28f)]+_0x49d52c(0x224),'result':_0x49d52c(0x291)});let _0x3d9b91=await isLimit(_0x4441dc);if(_0x3d9b91)return _0x2c5d7b[_0x49d52c(0x204)](0x193)[_0x49d52c(0x20d)]({'status':0x193,'message':_0x49d52c(0x207)});fetch(encodeURI(_0x49d52c(0x277)))[_0x49d52c(0x21b)](_0x3cc23e=>_0x3cc23e[_0x49d52c(0x212)]())[_0x49d52c(0x21b)](_0x135cc8=>{var _0x558eb2=_0x49d52c,_0x50d652=_0x135cc8,_0x50d652=_0x135cc8[Math['floor'](Math[_0x558eb2(0x1d7)]()*_0x135cc8[_0x558eb2(0x1e7)])],_0x155c80={'url':_0x50d652[_0x558eb2(0x265)],'method':_0x558eb2(0x19d),'encoding':null};request(_0x155c80,function(_0x363cd7,_0x4818d5,_0x279a75){var _0x1a05c4=_0x558eb2;_0x2c5d7b[_0x1a05c4(0x218)](_0x1a05c4(0x29a),_0x1a05c4(0x229)),_0x2c5d7b[_0x1a05c4(0x20d)](_0x279a75);});}),limitAdd(_0x4441dc);}),router[_0x24c76f(0x24b)](_0x24c76f(0x2a8),async(_0x3c9f6f,_0x516ce3,_0xa60bc9)=>{var _0xf62e47=_0x24c76f,_0x34deef=_0x3c9f6f[_0xf62e47(0x289)][_0xf62e47(0x1b3)],_0x36c6b9=_0x3c9f6f['query']['page'];if(!_0x34deef)return _0x516ce3[_0xf62e47(0x212)](loghandler[_0xf62e47(0x290)]);const _0x4cc0ef=await cekKey(_0x34deef);if(!_0x4cc0ef)return _0x516ce3[_0xf62e47(0x204)](0x193)[_0xf62e47(0x20d)]({'status':0x193,'message':'apikey\x20'+_0x34deef+_0xf62e47(0x2a2)+_0x3c9f6f['hostname']+_0xf62e47(0x224),'result':_0xf62e47(0x291)});let _0x1289ce=await isLimit(_0x34deef);if(_0x1289ce)return _0x516ce3[_0xf62e47(0x204)](0x193)[_0xf62e47(0x20d)]({'status':0x193,'message':_0xf62e47(0x207)});fetch(encodeURI(_0xf62e47(0x23b)))[_0xf62e47(0x21b)](_0x32874e=>_0x32874e[_0xf62e47(0x212)]())['then'](_0x362de0=>{var _0x19b057=_0xf62e47,_0x5ebd2f=_0x362de0,_0x5ebd2f=_0x362de0[Math[_0x19b057(0x195)](Math[_0x19b057(0x1d7)]()*_0x362de0[_0x19b057(0x1e7)])],_0xdc4dfe={'url':_0x5ebd2f['url'],'method':'GET','encoding':null};request(_0xdc4dfe,function(_0xd178a7,_0x3aa54c,_0x5915ee){var _0x1cb729=_0x19b057;_0x516ce3[_0x1cb729(0x218)](_0x1cb729(0x29a),_0x1cb729(0x229)),_0x516ce3['send'](_0x5915ee);});}),limitAdd(_0x34deef);}),router['get'](_0x24c76f(0x1a5),async(_0x129d93,_0x3602fd,_0x5a7065)=>{var _0x210b2e=_0x24c76f,_0x229130=_0x129d93[_0x210b2e(0x289)][_0x210b2e(0x1b3)],_0x332f35=_0x129d93[_0x210b2e(0x289)]['page'];if(!_0x229130)return _0x3602fd[_0x210b2e(0x212)](loghandler[_0x210b2e(0x290)]);const _0xc98e51=await cekKey(_0x229130);if(!_0xc98e51)return _0x3602fd[_0x210b2e(0x204)](0x193)[_0x210b2e(0x20d)]({'status':0x193,'message':_0x210b2e(0x273)+_0x229130+_0x210b2e(0x2a2)+_0x129d93[_0x210b2e(0x28f)]+'/users/signup','result':_0x210b2e(0x291)});let _0x4b4896=await isLimit(_0x229130);if(_0x4b4896)return _0x3602fd[_0x210b2e(0x204)](0x193)[_0x210b2e(0x20d)]({'status':0x193,'message':_0x210b2e(0x207)});scr[_0x210b2e(0x1b1)]()[_0x210b2e(0x21b)](_0x3f343c=>{var _0x284c0d=_0x3f343c;_0x3602fd['json']({'result':_0x284c0d});})['catch'](_0x515c17=>{var _0x27d78d=_0x210b2e;console['log'](_0x515c17),_0x3602fd[_0x27d78d(0x212)](loghandler[_0x27d78d(0x291)]);}),limitAdd(_0x229130);}),router[_0x24c76f(0x24b)](_0x24c76f(0x2a0),async(_0xbe9a03,_0x5a8260,_0x2d9eb3)=>{var _0x338e01=_0x24c76f,_0x45f5cf=_0xbe9a03['query'][_0x338e01(0x1b3)],_0x3196d2=_0xbe9a03[_0x338e01(0x289)][_0x338e01(0x216)];if(!_0x45f5cf)return _0x5a8260[_0x338e01(0x212)](loghandler[_0x338e01(0x290)]);if(!_0x3196d2)return _0x5a8260[_0x338e01(0x212)]({'status':![],'creator':''+creator,'message':_0x338e01(0x192)});const _0xe2900a=await cekKey(_0x45f5cf);if(!_0xe2900a)return _0x5a8260[_0x338e01(0x204)](0x193)[_0x338e01(0x20d)]({'status':0x193,'message':_0x338e01(0x273)+_0x45f5cf+_0x338e01(0x2a2)+_0xbe9a03[_0x338e01(0x28f)]+'/users/signup','result':'error'});let _0x2de7eb=await isLimit(_0x45f5cf);if(_0x2de7eb)return _0x5a8260[_0x338e01(0x204)](0x193)[_0x338e01(0x20d)]({'status':0x193,'message':_0x338e01(0x207)});fetch(encodeURI(_0x338e01(0x205)+_0x3196d2))['then'](_0x1a8b51=>_0x1a8b51[_0x338e01(0x212)]())[_0x338e01(0x21b)](_0x3c4f00=>{var _0x3dfbbf=_0x338e01,_0x42203a=_0x3c4f00;_0x5a8260[_0x3dfbbf(0x212)]({'author':creator,'result':_0x42203a});})[_0x338e01(0x26b)](_0x4c0b3a=>{var _0x5b8119=_0x338e01;console['log'](_0x4c0b3a),_0x5a8260[_0x5b8119(0x212)](loghandler['error']);}),limitAdd(_0x45f5cf);}),router[_0x24c76f(0x24b)](_0x24c76f(0x287),async(_0x3cc106,_0x768096,_0x5c3e60)=>{var _0x355faf=_0x24c76f,_0x5aa0af=_0x3cc106[_0x355faf(0x289)][_0x355faf(0x1b3)],_0x38a468=_0x3cc106[_0x355faf(0x289)][_0x355faf(0x203)];if(!_0x5aa0af)return _0x768096['json'](loghandler['noapikey']);const _0xe4d853=await cekKey(_0x5aa0af);if(!_0xe4d853)return _0x768096[_0x355faf(0x204)](0x193)[_0x355faf(0x20d)]({'status':0x193,'message':_0x355faf(0x273)+_0x5aa0af+_0x355faf(0x2a2)+_0x3cc106['hostname']+_0x355faf(0x224),'result':_0x355faf(0x291)});let _0x27c33f=await isLimit(_0x5aa0af);if(_0x27c33f)return _0x768096['status'](0x193)['send']({'status':0x193,'message':'your\x20limit\x20has\x20been\x20exhausted,\x20reset\x20every\x2012\x20PM'});if(!_0x38a468)return _0x768096[_0x355faf(0x212)]({'status':![],'creator':''+creator,'message':_0x355faf(0x299)});fetch(encodeURI(_0x355faf(0x220)+_0x38a468))[_0x355faf(0x21b)](_0x100651=>_0x100651[_0x355faf(0x212)]())[_0x355faf(0x21b)](_0x39e69e=>{var _0xff86af=_0x39e69e;_0x768096['json']({'result':_0xff86af});})[_0x355faf(0x26b)](_0x2b46db=>{var _0x598253=_0x355faf;console[_0x598253(0x29c)](_0x2b46db),_0x768096['json'](loghandler[_0x598253(0x291)]);}),limitAdd(_0x5aa0af);}),router[_0x24c76f(0x24b)]('/other/kodepos',async(_0x2239c3,_0xad0593,_0x3d21f8)=>{var _0x3cda61=_0x24c76f,_0x1669be=_0x2239c3[_0x3cda61(0x289)][_0x3cda61(0x1b3)],_0x4e5c35=_0x2239c3[_0x3cda61(0x289)][_0x3cda61(0x253)];if(!_0x1669be)return _0xad0593[_0x3cda61(0x212)](loghandler['noapikey']);if(!_0x4e5c35)return _0xad0593[_0x3cda61(0x212)]({'status':![],'creator':''+creator,'message':_0x3cda61(0x288)});const _0xe78681=await cekKey(_0x1669be);if(!_0xe78681)return _0xad0593[_0x3cda61(0x204)](0x193)['send']({'status':0x193,'message':_0x3cda61(0x273)+_0x1669be+_0x3cda61(0x2a2)+_0x2239c3[_0x3cda61(0x28f)]+'/users/signup','result':_0x3cda61(0x291)});let _0x24b828=await isLimit(_0x1669be);if(_0x24b828)return _0xad0593[_0x3cda61(0x204)](0x193)[_0x3cda61(0x20d)]({'status':0x193,'message':_0x3cda61(0x207)});fetch(encodeURI(_0x3cda61(0x246)+_0x4e5c35))[_0x3cda61(0x21b)](_0x26c60f=>_0x26c60f['json']())[_0x3cda61(0x21b)](_0x54c919=>{var _0x2b5384=_0x54c919;_0xad0593['json']({'result':_0x2b5384});})[_0x3cda61(0x26b)](_0xdeb7dd=>{var _0x156e00=_0x3cda61;console[_0x156e00(0x29c)](_0xdeb7dd),_0xad0593[_0x156e00(0x212)](loghandler[_0x156e00(0x291)]);}),limitAdd(_0x1669be);}),router[_0x24c76f(0x24b)]('/other/covid-world',async(_0x5c37af,_0x62a3e0,_0x32fa9b)=>{var _0x5b1cb0=_0x24c76f,_0x27f414=_0x5c37af[_0x5b1cb0(0x289)][_0x5b1cb0(0x1b3)],_0x29a6ed=_0x5c37af[_0x5b1cb0(0x289)][_0x5b1cb0(0x203)];if(!_0x27f414)return _0x62a3e0[_0x5b1cb0(0x212)](loghandler[_0x5b1cb0(0x290)]);if(!_0x29a6ed)return _0x62a3e0[_0x5b1cb0(0x212)]({'status':![],'creator':''+creator,'message':_0x5b1cb0(0x299)});const _0x5c36ff=await cekKey(_0x27f414);if(!_0x5c36ff)return _0x62a3e0['status'](0x193)[_0x5b1cb0(0x20d)]({'status':0x193,'message':'apikey\x20'+_0x27f414+_0x5b1cb0(0x2a2)+_0x5c37af['hostname']+'/users/signup','result':_0x5b1cb0(0x291)});let _0x63bd77=await isLimit(_0x27f414);if(_0x63bd77)return _0x62a3e0['status'](0x193)[_0x5b1cb0(0x20d)]({'status':0x193,'message':_0x5b1cb0(0x207)});fetch(encodeURI(_0x5b1cb0(0x276)))['then'](_0x34439d=>_0x34439d[_0x5b1cb0(0x212)]())['then'](_0x82730=>{var _0x148270=_0x5b1cb0,_0x409242=_0x82730;_0x62a3e0[_0x148270(0x212)]({'result':_0x409242});})[_0x5b1cb0(0x26b)](_0x1dfa85=>{var _0x273f9c=_0x5b1cb0;console[_0x273f9c(0x29c)](_0x1dfa85),_0x62a3e0[_0x273f9c(0x212)](loghandler[_0x273f9c(0x291)]);}),limitAdd(_0x27f414);}),router[_0x24c76f(0x24b)](_0x24c76f(0x191),async(_0x5c8a0e,_0x3ad81a,_0x2bfbad)=>{var _0x3d389f=_0x24c76f,_0x20ae0e=_0x5c8a0e['query'][_0x3d389f(0x1b3)],_0x2cff95=_0x5c8a0e[_0x3d389f(0x289)][_0x3d389f(0x203)];if(!_0x20ae0e)return _0x3ad81a['json'](loghandler['noapikey']);if(!_0x2cff95)return _0x3ad81a[_0x3d389f(0x212)]({'status':![],'creator':''+creator,'message':'masukan\x20parameter\x20kata'});const _0x369005=await cekKey(_0x20ae0e);if(!_0x369005)return _0x3ad81a[_0x3d389f(0x204)](0x193)[_0x3d389f(0x20d)]({'status':0x193,'message':_0x3d389f(0x273)+_0x20ae0e+_0x3d389f(0x2a2)+_0x5c8a0e[_0x3d389f(0x28f)]+_0x3d389f(0x224),'result':_0x3d389f(0x291)});let _0x237487=await isLimit(_0x20ae0e);if(_0x237487)return _0x3ad81a['status'](0x193)['send']({'status':0x193,'message':_0x3d389f(0x207)});fetch(encodeURI(_0x3d389f(0x2b2)+_0x2cff95))[_0x3d389f(0x21b)](_0x56a756=>_0x56a756['json']())[_0x3d389f(0x21b)](_0x38af2e=>{var _0x57ecbf=_0x3d389f,_0xad5276=_0x38af2e;_0x3ad81a[_0x57ecbf(0x212)]({'result':_0xad5276});})[_0x3d389f(0x26b)](_0x2fca2c=>{var _0x5e6fdb=_0x3d389f;console[_0x5e6fdb(0x29c)](_0x2fca2c),_0x3ad81a[_0x5e6fdb(0x212)](loghandler[_0x5e6fdb(0x291)]);}),limitAdd(_0x20ae0e);}),module[_0x24c76f(0x236)]=router;function _0x37b5(){var _0x4022ae=['https://i.postimg.cc/rFsmj7LH/5.jpg','https://photooxy.com/manga-and-anime/make-naruto-banner-online-free-378.html','url','10wBlmpK','https://i.postimg.cc/TY3ySpnC/3.jpg','https://i.postimg.cc/445zHzB4/10.jpg','https://i.postimg.cc/CLhDgvpC/18.jpg','text2','catch','https://i.postimg.cc/GpHWFY8d/p-1962vpyp71.jpg','https://i.postimg.cc/PxGRJBTR/3.jpg','https://i.postimg.cc/sgYy39Yy/1.jpg','https://i.postimg.cc/6pwptBjC/p-1962d0xml1.jpg','/cecan/korea','1BJsuAs','https://i.postimg.cc/63Hpt5fK/20.jpg','apikey\x20','https://i.postimg.cc/d3zqTYjm/p-1962pvq221.jpg','masukan\x20parameter\x20q','https://covid19-api-zhirrr.vercel.app/api/world','https://raw.githubusercontent.com/danzzcoding/data-danzzapi.xyz/main/nsfw/blowjob.json','https://i.postimg.cc/tT8VxWFM/709b2aee-3361-40f3-b9b8-ceb440f4e45a.jpg','https://photooxy.com/logo-and-text-effects/shadow-text-effect-in-the-sky-394.html','https://photooxy.com/logo-and-text-effects/illuminated-metallic-effect-177.html','7DLqcBk','https://i.postimg.cc/PJtYFxrk/1.jpg','instagramdl','https://i.postimg.cc/hPjxLbbX/p-196298pkr1.jpg','https://i.postimg.cc/ZYBqbBwk/p-1962ufc7p1.jpg','https://i.postimg.cc/zBLGDYtR/21.jpg','https://i.postimg.cc/m2TKQfCx/28.jpg','https://i.postimg.cc/C5Vx0NGS/76ea8753-e7e2-453d-9e51-e825125b3ff9.jpg','https://i.postimg.cc/xd4XwMp1/8bccc0ce-9313-4831-88ff-d9abec1904c2.jpg','https://i.postimg.cc/pX6jqhqq/p-1962enqpe1.jpg','https://i.postimg.cc/L8BFTfV1/p-1962mt0wq1.jpg','https://i.postimg.cc/SKWzSZqv/p-19626rftx1.jpg','/other/hilih','masukan\x20parameter\x20kota','query','https://photooxy.com/logo-and-text-effects/realistic-flaming-text-effect-online-197.html','https://i.postimg.cc/13CxVMzv/p-1962tt38s1.jpg','https://i.postimg.cc/MGghRnbt/24.jpg','https://i.postimg.cc/8zycvLSm/christy.jpg','https://i.postimg.cc/CLpwwvZD/p-19629cg431.jpg','hostname','noapikey','error','https://i.postimg.cc/HWykfH8q/4.jpg','/photooxy/shadow-sky','https://i.postimg.cc/66YqdtFR/7.jpg','https://i.postimg.cc/Yq7Hmb6H/p-1962rcc7k1.jpg','https://i.postimg.cc/VsRrDj0J/29.jpg','https://photooxy.com/logo-and-text-effects/creating-an-underwater-ocean-363.html','https://i.postimg.cc/nLWtgTbX/p-1962nvj4g1.jpg','masukan\x20parameter\x20kata','Content-Type','https://i.postimg.cc/52S0sMkw/16.jpg','log','https://i.postimg.cc/SsYnkRH7/40a50ddb-7bd5-4918-a538-83a91063bf4b.jpg','/photooxy/pubg-mobile','https://i.postimg.cc/1t6bKyvS/25.jpg','/other/github-stalk','https://i.postimg.cc/WbjcXJRH/22.jpg','\x20not\x20found,\x20please\x20register\x20first!\x20https://','https://i.postimg.cc/ZRcxmgR3/37.jpg','/search/google-image','3261762dVKCPW','https://i.postimg.cc/SKgF0h3Q/p-1962p3bmk1.jpg','https://i.postimg.cc/6q54fmYW/16.jpg','/nsfw/cuckold','https://i.postimg.cc/zGz5XH0g/20.jpg','https://i.postimg.cc/DZYTGTPp/p-1962grit21.jpg','https://i.postimg.cc/GpbRt8KD/13.jpg','https://i.postimg.cc/wTgnWnyW/p-1962p9nlk1.jpg','https://i.postimg.cc/nVwMJ8BL/p-1962umwai1.jpg','fileSize','https://i.postimg.cc/Jz7ttP9h/christy-jkt48.jpg','https://i.postimg.cc/nrkDmmBQ/17.jpg','https://i.ibb.co/Jr5SdmG/michie3.jpg','https://kbbi-api-zhirrr.vercel.app/api/kbbi?text=','https://i.postimg.cc/kMF8z0zX/22.jpg','https://i.postimg.cc/Jnpk4ShM/Michie-JKT48-2.jpg','https://i.postimg.cc/4d7XRCw2/18.jpg','instagramdlv4','/lib/fetcher.js','https://i.postimg.cc/cHQ5nXJ4/30.jpg','https://i.postimg.cc/59TJNf06/p-1962csdwa1.jpg','/other/kbbi','masukan\x20parameter\x20username','/cekapikey','/cecan/indonesia','floor','https://raw.githubusercontent.com/danzzcoding/data-danzzapi.xyz/main/nsfw/ass.json','/cecan/jkt48','https://i.postimg.cc/y8LKJ6br/21.jpg','/photooxy/underwater','https://i.postimg.cc/j2XkfQTx/p-1962caiz61.jpg','/nsfw/blowjob','instagramdlv2','GET','https://i.postimg.cc/9fWc91ZS/p-19625lzea1.jpg','https://i.postimg.cc/MptMYhyR/45f00d2e-9a38-433b-b3c3-8383421dc1b7.jpg','https://i.postimg.cc/QdH4bXMz/32.jpg','https://i.postimg.cc/MKtN5Pmn/29.jpg','wallpaper','https://i.postimg.cc/XJbddRQW/p-19624y1on1.jpg','https://i.postimg.cc/3wv0BV2h/24.jpg','/game/tebakgambar','/nsfw/bdsm','/photooxy/flaming','https://i.postimg.cc/RhYfVzz3/8.jpg','/search/pinterest','https://i.postimg.cc/QdncScPQ/1.jpg','masukan\x20parameter\x20text','https://i.postimg.cc/XqhB9FFP/Kathrina-Jkt48-3.jpg','/download/instagram','https://i.postimg.cc/tJtC4xkP/c95b353f-b1bd-4915-906d-1d87295909da.jpg','https://raw.githubusercontent.com/danzzcoding/data-danzzapi.xyz/main/nsfw/ahegao.json','https://i.postimg.cc/8zTfM1rN/77d1a4d6-165d-4d6f-8313-eafa8fe106d9.jpg','tebakgambar','https://i.postimg.cc/hPXGpCJ7/p-19625n89w1.jpg','apikey','/lib/oxy.js','/news/cnn','https://i.postimg.cc/43DVRsXn/16.jpg','https://i.postimg.cc/ydp6s9JG/p-1962yt9ph1.jpg','https://i.postimg.cc/MT0MkBsr/26.jpg','https://i.postimg.cc/T3WL0mqD/15.jpg','https://i.postimg.cc/PfCCT9Pj/12.jpg','https://i.postimg.cc/RZ3fY29q/12.jpg','express','https://i.postimg.cc/FzJH56dP/christy-jkt48-2.jpg','https://i.postimg.cc/tTc8vg6W/p-1962w2hyp1.jpg','/photooxy/rainbow','https://i.postimg.cc/5NJbTzVz/7.jpg','914594pdYivh','https://i.postimg.cc/zX8wfzKg/14.jpg','/news/antara','../MongoDB/function','https://i.postimg.cc/TYZmzG9F/9.jpg','/lib/color.js','https://i.postimg.cc/4N03Swfx/6.jpg','https://i.postimg.cc/wvgR7hjT/p-19623vybj1.jpg','https://i.postimg.cc/02D77WWd/Beginner.jpg','https://i.postimg.cc/XJJ0KRT7/11.jpg','https://i.postimg.cc/hvGJ0cmk/p-1962alh5c1.jpg','https://i.postimg.cc/RFwfMy0d/2.jpg','https://i.postimg.cc/ydxwTRD7/p-1962cau3w1.jpg','https://i.postimg.cc/QtCMSCXZ/c77449c0-57c6-4267-8cb3-b0a054c0d415.jpg','masukan\x20parameter\x20type','https://i.ibb.co/60YHk5M/michie2.jpg','/download/ytmp4','https://i.postimg.cc/MGPBzhHx/1216b751-6b27-4bb0-ac73-c2b6daf91042.jpg','https://i.postimg.cc/dVG0rLX7/p-19625anrs1.jpg','https://i.postimg.cc/t4HHWDFb/p-1962y8nl71.jpg','https://i.postimg.cc/JnXzSgBp/00f37ec5-986d-4810-a903-e478f1360a2a.jpg','tiktokdl','random','/cecan/thailand','https://i.postimg.cc/QtWjGkCQ/8.jpg','https://i.postimg.cc/nrZmM2jJ/20.jpg','https://i.postimg.cc/tTY4RnR5/17.jpg','https://i.postimg.cc/BbZFw2rw/p-1962u3qhb1.jpg','https://i.postimg.cc/bY9BYCMm/31.jpg','download','page','https://photooxy.com/other-design/create-metallic-text-glow-online-188.html','https://i.postimg.cc/jdnSYTwV/3.jpg','https://i.postimg.cc/dVDy7L1L/21.jpg','masukan\x20parameter\x20url','https://i.postimg.cc/PrpwT3nn/kathrina-jkt48.jpg','text','https://i.postimg.cc/rwtpXWsC/8.jpg','length','https://i.postimg.cc/VkTbXmr4/23.jpg','https://i.postimg.cc/D0BS0T3r/28.jpg','588Efcrkb','1607031iVgWla','https://i.postimg.cc/QCcsVp2p/2.jpg','/news/tempo','pinterest','693847zxEvBR','3380otoufd','https://i.postimg.cc/zG08NKR1/p-1962c7n2o1.jpg','https://i.postimg.cc/TwQPHFqn/p-19627bm3c1.jpg','https://raw.githubusercontent.com/danzzcoding/data-danzzapi.xyz/main/nsfw/bdsm.json','/news/cnbc','https://i.postimg.cc/2jqQS8nt/c9d4513f-8026-45c1-b3b5-5ce42f3aae9b.jpg','https://i.postimg.cc/fycZkzxk/5.jpg','/download/facebook','https://i.postimg.cc/ZqcKsXJ4/p-1962asjl31.jpg','https://i.postimg.cc/B6njyNBy/Kathrin-JKT48.jpg','https://photooxy.com/logo-and-text-effects/rainbow-shine-text-223.html','https://i.postimg.cc/4x3zzW84/11.jpg','https://i.postimg.cc/Xv7FSVVQ/a2dba30c-ef17-4559-9a60-76bebc997961.jpg','https://i.postimg.cc/VsbtcZ8Q/183f8aaa-bc9d-4547-a223-3156abf9a9b6.jpg','https://i.postimg.cc/R0XFcKxT/d13d084c-76f9-4a15-a450-303aadbf20ce.jpg','https://i.postimg.cc/D0LFqGN8/p-1962ck87p1.jpg','tiktokdlv2','@bochilteam/scraper','https://i.postimg.cc/DZBLHXjP/7.jpg','kata','status','https://github-api-zhirrr.vercel.app/api/detailuser?q=','../settings.js','your\x20limit\x20has\x20been\x20exhausted,\x20reset\x20every\x2012\x20PM','https://i.postimg.cc/pVwLpWSm/p-19629eev81.jpg','/cecan/vietnam','https://i.postimg.cc/QtJ5bfyT/p-19623z95r1.jpg','/nsfw/ass','5360280TmQccW','send','https://i.postimg.cc/CMqh8R9j/p-1962yyuuh1.jpg','https://i.postimg.cc/3RZRfTRs/31.jpg','https://i.postimg.cc/W3F9MmJR/Michiejkt48-mirror-selca.jpg','https://i.postimg.cc/nz6pj20y/p-1962qiubc1.jpg','json','masukan\x20parameter\x20query','https://i.postimg.cc/MTLpLwTM/Cool-Baby-Boy-Delshel.jpg','https://i.postimg.cc/KcV1qPkq/Freya-JKT48.jpg','username','/download/pinterest','set','https://i.postimg.cc/YC12jxzb/19.jpg','https://i.postimg.cc/wB8j6vsK/9.jpg','then','https://i.postimg.cc/fyNp21P9/26.jpg','https://i.postimg.cc/RFTnfB1p/11.jpg','https://i.postimg.cc/52x1C6S2/p-1962vn5rc1.jpg','2223iMuDRI','https://hilih-api-zhirrr.vercel.app/api/hilih?kata=','https://i.postimg.cc/Hn7f77xj/p-19622gld51.jpg','/cecan/japan','https://i.postimg.cc/SxbJqmGc/foto-freya-jkt48-kece-1.jpg','/users/signup','/search/wallpaper','https://i.postimg.cc/fRXRhJfz/p-1962qpsvb1.jpg','https://i.postimg.cc/W1Vg8GxR/b9c1b268-8506-4be6-8c0d-4a882c08ee9c.jpg','https://i.postimg.cc/Hnpyrb39/p-196240q3o1.jpg','image/png','https://i.postimg.cc/13q0X4Xy/5.jpg','/photooxy/naruto','https://i.postimg.cc/6QttJzQc/p-1962va89q1.jpg','/nsfw/ahegao','creator','https://i.postimg.cc/pXV1mQMR/35.jpg','https://i.postimg.cc/T1SPqmfb/p-1962gl6nf1.jpg','8313960mHmIfJ','axios','https://news-api-zhirrr.vercel.app/v1/cnn-news','https://i.postimg.cc/7hbTCXC7/michie-jkt48-3.jpg','https://i.postimg.cc/59kzccGm/kathrina-jkt48-2.jpg','exports','https://news-api-zhirrr.vercel.app/v1/tempo-news/','https://news-api-zhirrr.vercel.app/v1/antara-news/','https://i.postimg.cc/sD2wjV52/34.jpg','https://i.postimg.cc/rmgKs9cv/17.jpg','https://raw.githubusercontent.com/danzzcoding/data-danzzapi.xyz/main/nsfw/cuckold.json','/photooxy/metallic','https://i.ibb.co/whsRZJ8/michie.jpg','https://i.postimg.cc/MK7jncH9/69a399c9-9145-4d24-8261-23f15457871a.jpg','https://i.postimg.cc/wMGj9Nrv/p-19624pvv61.jpg','googleImage','https://i.postimg.cc/jd3PZtpG/13.jpg','https://i.postimg.cc/brHQRWcr/13.jpg','youtubedlv2','https://i.postimg.cc/V6PrHgFC/25.jpg','https://i.postimg.cc/BvsL5JLJ/kathrina-jkt48-1.jpg','https://kodepos-api-zhirrr.vercel.app/?q=','/news/republika','https://i.postimg.cc/QM91zHGR/15.jpg','https://i.postimg.cc/J05g9Pwd/27.jpg','https://i.postimg.cc/65qG7F8z/14.jpg','get','/download/tiktok','https://i.postimg.cc/pXCfhwJ1/12.jpg','https://i.postimg.cc/sfmTCBQ8/36.jpg','https://i.postimg.cc/MTnQHdfB/1171f324-92fd-4e18-932f-606dba679e59.jpg','https://i.postimg.cc/NfCywB4Y/30.jpg','https://i.postimg.cc/25tYbYwc/p-1962pac7k1.jpg','cwd','kota','https://i.postimg.cc/zv1CK5Q4/10.jpg','https://i.postimg.cc/rsRX3SVB/15.jpg','https://i.postimg.cc/02VB2fZZ/p-1962y8oif1.jpg','https://i.postimg.cc/76hDs6Bn/p-1962y8lij1.jpg','https://i.postimg.cc/vDFHQv5G/c599f6b8-41e5-4693-bf2e-85b9bcbfb167.jpg','/cecan/malaysia','type','https://news-api-zhirrr.vercel.app/v1/kumparan-news','instagramdlv3','https://i.postimg.cc/76zjcknR/p-1962fyik51.jpg','/cecan/china','https://i.postimg.cc/28sB6QCb/michie-JKT48.jpg','/lib/functions.js','https://i.postimg.cc/RhM3v0yC/27.jpg','https://i.postimg.cc/Rhgd78x9/33.jpg'];_0x37b5=function(){return _0x4022ae;};return _0x37b5();}
+
+__path = process.cwd();
+
+require('../settings.js');
+var express = require('express');
+var deepai = require('deepai');
+var axios = require('axios');
+var fetch = require('node-fetch');
+var request = require('request');
+var fs = require('fs');
+var generateResponse = require('../lib/gpt.js');
+var router = express.Router();
+var deepaiapi = global.deepaiapikey
+var stableapi = global.stableapi
+var creator = global.creator
+const {
+    limitAdd,
+    isLimit,
+    cekKey,
+    checkLimit
+} = require('../MongoDB/function');
+
+const scr = require('@bochilteam/scraper')
+const {
+    color,
+    bgcolor
+} = require(__path + '/lib/color.js');
+const {
+    fetchJson
+} = require(__path + '/lib/fetcher.js')
+const options = require(__path + '/lib/options.js');
+const {
+    getBuffer
+} = require(__path + '/lib/functions.js');
+const oxy = require(__path + '/lib/oxy.js');
+
+router.get('/cekapikey', async (req, res, next) => {
+    var apikey = req.query.apikey
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    const limit = await checkLimit(apikey);
+    res.send({
+        status: 200,
+        apikey: apikey,
+        limit: limit
+    });
+})
+
+//Artificial Intellegent
+router.get('/ai/chatgpt', async (req, res, next) => {
+    const apikey = req.query.apikey;
+    const text = `${req.query.text}`;
+
+    try {
+        if (!apikey) return res.json(loghandler.noapikey);
+
+        const check = await cekKey(apikey);
+        if (!check) {
+            return res.status(403).send({
+                status: 403,
+                message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+                result: "error"
+            });
+        }
+
+        if (!text) return res.json({
+            status: false,
+            message: 'text parameter required'
+        });
+
+        const userEmailAddress = req.user.email; 
+
+        const allowedEmails = ['bayuardana213@gmail.com'];
+
+        if (!allowedEmails.includes(userEmailAddress)) {
+          return res.status(403).send({
+            status: 403,
+            message: 'Anda tidak diizinkan mengakses fitur ini.'
+          });
+        }
+
+        const responseText = await generateResponse(text);
+        console.log("Response Text:", responseText);
+
+        res.json({
+            status: 'success',
+            chat: text,
+            response: responseText,
+            author: 'YuuXD'
+        });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({
+            status: 500,
+            message: 'Internal Server Error'
+        });
+    }
+});
+
+router.get('/ai/StabelDiffusion', async (req, res, next) => {
+    var apikey = req.query.apikey;
+    var text = req.query.text;
+    
+    if (!apikey) return res.json(loghandler.noapikey);
+    
+    const check = await cekKey(apikey);
+    
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+
+    let limit = await isLimit(apikey);
+    
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    var raw = JSON.stringify({
+        "key": `${stableapi}`,
+        "prompt": text,
+        "negative_prompt": null,
+        "width": "512",
+        "height": "512",
+        "samples": "1",
+        "num_inference_steps": "20",
+        "seed": null,
+        "guidance_scale": 7.5,
+        "safety_checker": "yes",
+        "multi_lingual": "no",
+        "panorama": "no",
+        "self_attention": "no",
+        "upscale": "no",
+        "embeddings_model": null,
+        "webhook": null,
+        "track_id": null
+    });
+
+    var requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+    };
+
+    try {
+        const response = await fetch("https://stablediffusionapi.com/api/v3/text2img", requestOptions);
+        const result = await response.json();
+
+        if (result.status === 'success' && result.output && result.output.length > 0) {
+
+            const imageURL = result.output[0];
+
+            res.send(`<img src="${imageURL}" alt="Generated Image">`);
+        } else {
+            res.status(500).json({ status: 'error', message: 'Generasi gambar tidak berhasil.' });
+        }
+    } catch (error) {
+        console.error('error', error);
+
+        res.status(500).json({
+          status: 500,
+          message: 'Internal Server Error'
+        });
+    }
+});
+
+router.get('/ai/deepai', async (req, res, next) => {
+    const apikey = req.query.apikey;
+    const text = req.query.text;
+
+    try {
+        if (!apikey) return res.json(loghandler.noapikey);
+
+        const check = await cekKey(apikey);
+        if (!check) {
+            return res.status(403).send({
+                status: 403,
+                message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+                result: "error"
+            });
+        }
+
+        if (!text) return res.json({
+            status: false,
+            message: 'text parameter required'
+        });
+
+        deepai.setApiKey(`${deepaiapi}`);
+        const response = await deepai.callStandardApi("text2img", {
+            text,
+        });
+
+        if (response && response.output_url) {
+            res.send(`<img src="${response.output_url}" alt="Generated Image">`);
+        } else {
+            res.status(500).json({ status: 'error', message: 'Failed to generate image.' });
+        }
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({
+            status: 500,
+            message: 'Internal Server Error'
+        });
+    }
+});
+
+
+// cecan
+router.get('/cecan/china', async (req, res, next) => {
+    var apikey = req.query.apikey
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    var data = ["https://i.postimg.cc/QdncScPQ/1.jpg", "https://i.postimg.cc/zv1CK5Q4/10.jpg", "https://i.postimg.cc/4x3zzW84/11.jpg", "https://i.postimg.cc/pXCfhwJ1/12.jpg", "https://i.postimg.cc/brHQRWcr/13.jpg", "https://i.postimg.cc/zX8wfzKg/14.jpg", "https://i.postimg.cc/QM91zHGR/15.jpg", "https://i.postimg.cc/43DVRsXn/16.jpg", "https://i.postimg.cc/nrkDmmBQ/17.jpg", "https://i.postimg.cc/CLhDgvpC/18.jpg", "https://i.postimg.cc/fT8dTxMG/19.jpg", "https://i.postimg.cc/RFwfMy0d/2.jpg", "https://i.postimg.cc/nrZmM2jJ/20.jpg", "https://i.postimg.cc/dVDy7L1L/21.jpg", "https://i.postimg.cc/kMF8z0zX/22.jpg", "https://i.postimg.cc/VkTbXmr4/23.jpg", "https://i.postimg.cc/3wv0BV2h/24.jpg", "https://i.postimg.cc/V6PrHgFC/25.jpg", "https://i.postimg.cc/MT0MkBsr/26.jpg", "https://i.postimg.cc/RhM3v0yC/27.jpg", "https://i.postimg.cc/D0BS0T3r/28.jpg", "https://i.postimg.cc/VsRrDj0J/29.jpg", "https://i.postimg.cc/TY3ySpnC/3.jpg", "https://i.postimg.cc/NfCywB4Y/30.jpg", "https://i.postimg.cc/3RZRfTRs/31.jpg", "https://i.postimg.cc/HnZLH9b3/4.jpg", "https://i.postimg.cc/rFsmj7LH/5.jpg", "https://i.postimg.cc/4N03Swfx/6.jpg", "https://i.postimg.cc/66YqdtFR/7.jpg", "https://i.postimg.cc/rwtpXWsC/8.jpg", "https://i.postimg.cc/wB8j6vsK/9.jpg"]
+    var result = data[Math.floor(Math.random() * data.length)];
+    var requestSettings = {
+        url: result,
+        method: 'GET',
+        encoding: null
+    };
+    request(requestSettings, function (error, response, body) {
+        res.set('Content-Type', 'image/png');
+        res.send(body);
+    });
+    limitAdd(apikey);
+})
+router.get('/cecan/vietnam', async (req, res, next) => {
+    var apikey = req.query.apikey
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    var data = ["https://i.postimg.cc/QdncScPQ/1.jpg", "https://i.postimg.cc/zv1CK5Q4/10.jpg", "https://i.postimg.cc/4x3zzW84/11.jpg", "https://i.postimg.cc/pXCfhwJ1/12.jpg", "https://i.postimg.cc/brHQRWcr/13.jpg", "https://i.postimg.cc/zX8wfzKg/14.jpg", "https://i.postimg.cc/QM91zHGR/15.jpg", "https://i.postimg.cc/43DVRsXn/16.jpg", "https://i.postimg.cc/nrkDmmBQ/17.jpg", "https://i.postimg.cc/CLhDgvpC/18.jpg", "https://i.postimg.cc/fT8dTxMG/19.jpg", "https://i.postimg.cc/RFwfMy0d/2.jpg", "https://i.postimg.cc/nrZmM2jJ/20.jpg", "https://i.postimg.cc/dVDy7L1L/21.jpg", "https://i.postimg.cc/kMF8z0zX/22.jpg", "https://i.postimg.cc/VkTbXmr4/23.jpg", "https://i.postimg.cc/3wv0BV2h/24.jpg", "https://i.postimg.cc/V6PrHgFC/25.jpg", "https://i.postimg.cc/MT0MkBsr/26.jpg", "https://i.postimg.cc/RhM3v0yC/27.jpg", "https://i.postimg.cc/D0BS0T3r/28.jpg", "https://i.postimg.cc/VsRrDj0J/29.jpg", "https://i.postimg.cc/TY3ySpnC/3.jpg", "https://i.postimg.cc/NfCywB4Y/30.jpg", "https://i.postimg.cc/3RZRfTRs/31.jpg", "https://i.postimg.cc/HnZLH9b3/4.jpg", "https://i.postimg.cc/rFsmj7LH/5.jpg", "https://i.postimg.cc/4N03Swfx/6.jpg", "https://i.postimg.cc/66YqdtFR/7.jpg", "https://i.postimg.cc/rwtpXWsC/8.jpg", "https://i.postimg.cc/wB8j6vsK/9.jpg"]
+    var result = data[Math.floor(Math.random() * data.length)];
+    var requestSettings = {
+        url: result,
+        method: 'GET',
+        encoding: null
+    };
+    request(requestSettings, function (error, response, body) {
+        res.set('Content-Type', 'image/png');
+        res.send(body);
+    });
+    limitAdd(apikey);
+})
+router.get('/cecan/thailand', async (req, res, next) => {
+    var apikey = req.query.apikey
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    var data = ["https://i.postimg.cc/PJtYFxrk/1.jpg", "https://i.postimg.cc/445zHzB4/10.jpg", "https://i.postimg.cc/RFTnfB1p/11.jpg", "https://i.postimg.cc/RZ3fY29q/12.jpg", "https://i.postimg.cc/jd3PZtpG/13.jpg", "https://i.postimg.cc/65qG7F8z/14.jpg", "https://i.postimg.cc/T3WL0mqD/15.jpg", "https://i.postimg.cc/6q54fmYW/16.jpg", "https://i.postimg.cc/rmgKs9cv/17.jpg", "https://i.postimg.cc/j2Ld50M7/18.jpg", "https://i.postimg.cc/YC12jxzb/19.jpg", "https://i.postimg.cc/MHMqw0G0/2.jpg", "https://i.postimg.cc/63Hpt5fK/20.jpg", "https://i.postimg.cc/zBLGDYtR/21.jpg", "https://i.postimg.cc/jdnSYTwV/3.jpg", "https://i.postimg.cc/HWykfH8q/4.jpg", "https://i.postimg.cc/fycZkzxk/5.jpg", "https://i.postimg.cc/MK0KpDDt/6.jpg", "https://i.postimg.cc/5NJbTzVz/7.jpg", "https://i.postimg.cc/QtWjGkCQ/8.jpg", "https://i.postimg.cc/C5TSFBnW/9.jpg"]
+    var result = data[Math.floor(Math.random() * data.length)];
+    var requestSettings = {
+        url: result,
+        method: 'GET',
+        encoding: null
+    };
+    request(requestSettings, function (error, response, body) {
+        res.set('Content-Type', 'image/png');
+        res.send(body);
+    });
+    limitAdd(apikey);
+})
+router.get('/cecan/indonesia', async (req, res, next) => {
+    var apikey = req.query.apikey
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    var data = ["https://i.postimg.cc/sgYy39Yy/1.jpg", "https://i.postimg.cc/k5wmbJYp/10.jpg", "https://i.postimg.cc/XJJ0KRT7/11.jpg", "https://i.postimg.cc/PfCCT9Pj/12.jpg", "https://i.postimg.cc/GpbRt8KD/13.jpg", "https://i.postimg.cc/gkRr6hVt/14.jpg", "https://i.postimg.cc/rsRX3SVB/15.jpg", "https://i.postimg.cc/52S0sMkw/16.jpg", "https://i.postimg.cc/tTY4RnR5/17.jpg", "https://i.postimg.cc/4d7XRCw2/18.jpg", "https://i.postimg.cc/k55nwRSm/19.jpg", "https://i.postimg.cc/QCcsVp2p/2.jpg", "https://i.postimg.cc/zGz5XH0g/20.jpg", "https://i.postimg.cc/y8LKJ6br/21.jpg", "https://i.postimg.cc/WbjcXJRH/22.jpg", "https://i.postimg.cc/m2wfq2B2/23.jpg", "https://i.postimg.cc/MGghRnbt/24.jpg", "https://i.postimg.cc/1t6bKyvS/25.jpg", "https://i.postimg.cc/fyNp21P9/26.jpg", "https://i.postimg.cc/J05g9Pwd/27.jpg", "https://i.postimg.cc/m2TKQfCx/28.jpg", "https://i.postimg.cc/MKtN5Pmn/29.jpg", "https://i.postimg.cc/PxGRJBTR/3.jpg", "https://i.postimg.cc/cHQ5nXJ4/30.jpg", "https://i.postimg.cc/bY9BYCMm/31.jpg", "https://i.postimg.cc/QdH4bXMz/32.jpg", "https://i.postimg.cc/Rhgd78x9/33.jpg", "https://i.postimg.cc/sD2wjV52/34.jpg", "https://i.postimg.cc/pXV1mQMR/35.jpg", "https://i.postimg.cc/sfmTCBQ8/36.jpg", "https://i.postimg.cc/ZRcxmgR3/37.jpg", "https://i.postimg.cc/mkgNgwzn/38.jpg", "https://i.postimg.cc/pXyJNsth/4.jpg", "https://i.postimg.cc/13q0X4Xy/5.jpg", "https://i.postimg.cc/DZBLHXjP/7.jpg", "https://i.postimg.cc/RhYfVzz3/8.jpg", "https://i.postimg.cc/TYZmzG9F/9.jpg"]
+    var result = data[Math.floor(Math.random() * data.length)];
+    var requestSettings = {
+        url: result,
+        method: 'GET',
+        encoding: null
+    };
+    request(requestSettings, function (error, response, body) {
+        res.set('Content-Type', 'image/png');
+        res.send(body);
+    });
+    limitAdd(apikey);
+})
+router.get('/cecan/korea', async (req, res, next) => {
+    var apikey = req.query.apikey
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    var data = ["https://i.postimg.cc/K87Z4CkB/p-19620motq1.jpg", "https://i.postimg.cc/wvgR7hjT/p-19623vybj1.jpg", "https://i.postimg.cc/QtJ5bfyT/p-19623z95r1.jpg", "https://i.postimg.cc/XJbddRQW/p-19624y1on1.jpg", "https://i.postimg.cc/dVG0rLX7/p-19625anrs1.jpg", "https://i.postimg.cc/9fWc91ZS/p-19625lzea1.jpg", "https://i.postimg.cc/SKWzSZqv/p-19626rftx1.jpg", "https://i.postimg.cc/hPjxLbbX/p-196298pkr1.jpg", "https://i.postimg.cc/hvGJ0cmk/p-1962alh5c1.jpg", "https://i.postimg.cc/ZqcKsXJ4/p-1962asjl31.jpg", "https://i.postimg.cc/pX6jqhqq/p-1962enqpe1.jpg", "https://i.postimg.cc/T1SPqmfb/p-1962gl6nf1.jpg", "https://i.postimg.cc/mZVC16Mx/p-1962koqm41.jpg", "https://i.postimg.cc/d3zqTYjm/p-1962pvq221.jpg", "https://i.postimg.cc/3xQ883R3/p-1962spcdo1.jpg", "https://i.postimg.cc/BbZFw2rw/p-1962u3qhb1.jpg", "https://i.postimg.cc/nVwMJ8BL/p-1962umwai1.jpg", "https://i.postimg.cc/76hDs6Bn/p-1962y8lij1.jpg", "https://i.postimg.cc/ydp6s9JG/p-1962yt9ph1.jpg"]
+    var result = data[Math.floor(Math.random() * data.length)];
+    var requestSettings = {
+        url: result,
+        method: 'GET',
+        encoding: null
+    };
+    request(requestSettings, function (error, response, body) {
+        res.set('Content-Type', 'image/png');
+        res.send(body);
+    });
+    limitAdd(apikey);
+})
+router.get('/cecan/japan', async (req, res, next) => {
+    var apikey = req.query.apikey
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    var data = ["https://i.postimg.cc/RCcjLvF6/p-196252lk91.jpg", "https://i.postimg.cc/7hMdHncM/p-19625eppj1.jpg", "https://i.postimg.cc/CLpwwvZD/p-19629cg431.jpg", "https://i.postimg.cc/pVwLpWSm/p-19629eev81.jpg", "https://i.postimg.cc/ydxwTRD7/p-1962cau3w1.jpg", "https://i.postimg.cc/D0LFqGN8/p-1962ck87p1.jpg", "https://i.postimg.cc/76zjcknR/p-1962fyik51.jpg", "https://i.postimg.cc/bYtzcXvp/p-1962i85aq1.jpg", "https://i.postimg.cc/nLWtgTbX/p-1962nvj4g1.jpg", "https://i.postimg.cc/rFGMsSWH/p-1962o5sp41.jpg", "https://i.postimg.cc/wTgnWnyW/p-1962p9nlk1.jpg", "https://i.postimg.cc/T1XBv4k3/p-1962q7ura1.jpg", "https://i.postimg.cc/nz6pj20y/p-1962qiubc1.jpg", "https://i.postimg.cc/13CxVMzv/p-1962tt38s1.jpg", "https://i.postimg.cc/ZYBqbBwk/p-1962ufc7p1.jpg", "https://i.postimg.cc/52x1C6S2/p-1962vn5rc1.jpg", "https://i.postimg.cc/GpHWFY8d/p-1962vpyp71.jpg", "https://i.postimg.cc/tTc8vg6W/p-1962w2hyp1.jpg"]
+    var result = data[Math.floor(Math.random() * data.length)];
+    var requestSettings = {
+        url: result,
+        method: 'GET',
+        encoding: null
+    };
+    request(requestSettings, function (error, response, body) {
+        res.set('Content-Type', 'image/png');
+        res.send(body);
+    });
+    limitAdd(apikey);
+})
+router.get('/cecan/malaysia', async (req, res, next) => {
+    var apikey = req.query.apikey
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    var data = ["https://i.postimg.cc/L8BFTfV1/p-1962mt0wq1.jpg", "https://i.postimg.cc/SKgF0h3Q/p-1962p3bmk1.jpg", "https://i.postimg.cc/25tYbYwc/p-1962pac7k1.jpg", "https://i.postimg.cc/fRXRhJfz/p-1962qpsvb1.jpg", "https://i.postimg.cc/Yq7Hmb6H/p-1962rcc7k1.jpg", "https://i.postimg.cc/G3QDZSh7/p-1962v04461.jpg", "https://i.postimg.cc/6QttJzQc/p-1962va89q1.jpg", "https://i.postimg.cc/t4HHWDFb/p-1962y8nl71.jpg", "https://i.postimg.cc/02VB2fZZ/p-1962y8oif1.jpg", "https://i.postimg.cc/CMqh8R9j/p-1962yyuuh1.jpg", "https://i.postimg.cc/Hn7f77xj/p-19622gld51.jpg", "https://i.postimg.cc/Hnpyrb39/p-196240q3o1.jpg", "https://i.postimg.cc/wMGj9Nrv/p-19624pvv61.jpg", "https://i.postimg.cc/hPXGpCJ7/p-19625n89w1.jpg", "https://i.postimg.cc/TwQPHFqn/p-19627bm3c1.jpg", "https://i.postimg.cc/zG08NKR1/p-1962c7n2o1.jpg", "https://i.postimg.cc/j2XkfQTx/p-1962caiz61.jpg", "https://i.postimg.cc/59TJNf06/p-1962csdwa1.jpg", "https://i.postimg.cc/6pwptBjC/p-1962d0xml1.jpg", "https://i.postimg.cc/PqyhtZpj/p-1962d4cuh1.jpg", "https://i.postimg.cc/DZYTGTPp/p-1962grit21.jpg", "https://i.postimg.cc/T1LXq4kd/p-1962zgkj21.jpg"]
+    var result = data[Math.floor(Math.random() * data.length)];
+    var requestSettings = {
+        url: result,
+        method: 'GET',
+        encoding: null
+    };
+    request(requestSettings, function (error, response, body) {
+        res.set('Content-Type', 'image/png');
+        res.send(body);
+    });
+    limitAdd(apikey);
+})
+router.get('/cecan/jkt48', async (req, res, next) => {
+    var apikey = req.query.apikey
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    var data = ["https://i.ibb.co/Jr5SdmG/michie3.jpg",
+    "https://i.ibb.co/60YHk5M/michie2.jpg",
+    "https://i.ibb.co/whsRZJ8/michie.jpg",
+    "https://i.postimg.cc/W3F9MmJR/Michiejkt48-mirror-selca.jpg",
+    "https://i.postimg.cc/JnXzSgBp/00f37ec5-986d-4810-a903-e478f1360a2a.jpg",
+    "https://i.postimg.cc/gjRLqjDk/0193a76c-a9aa-40a8-a920-fe68e2857c3e.jpg",
+    "https://i.postimg.cc/NFh5MYch/09ce4efb-ed9b-494f-ac9e-898ad180eed3.jpg",
+    "https://i.postimg.cc/vHs4wQhf/0baf8534-be24-4784-bc4b-7f70ccca7dcd.jpg",
+    "https://i.postimg.cc/bYbZ5Gxq/0edbb5a1-2a3b-4350-b4d9-7d94a23a248e.jpg",
+    "https://i.postimg.cc/MTnQHdfB/1171f324-92fd-4e18-932f-606dba679e59.jpg",
+    "https://i.postimg.cc/MGPBzhHx/1216b751-6b27-4bb0-ac73-c2b6daf91042.jpg",
+    "https://i.postimg.cc/VsbtcZ8Q/183f8aaa-bc9d-4547-a223-3156abf9a9b6.jpg",
+    "https://i.postimg.cc/SsYnkRH7/40a50ddb-7bd5-4918-a538-83a91063bf4b.jpg",
+    "https://i.postimg.cc/7L6CtmVR/43dec306-96d9-4aea-9916-48d02c001ed5.jpg",
+    "https://i.postimg.cc/MptMYhyR/45f00d2e-9a38-433b-b3c3-8383421dc1b7.jpg",
+    "https://i.postimg.cc/7hgbJcH5/5ca1adc3-757d-4043-beed-e8f37c622050.jpg",
+    "https://i.postimg.cc/MK7jncH9/69a399c9-9145-4d24-8261-23f15457871a.jpg",
+    "https://i.postimg.cc/tT8VxWFM/709b2aee-3361-40f3-b9b8-ceb440f4e45a.jpg",
+    "https://i.postimg.cc/C5Vx0NGS/76ea8753-e7e2-453d-9e51-e825125b3ff9.jpg",
+    "https://i.postimg.cc/8zTfM1rN/77d1a4d6-165d-4d6f-8313-eafa8fe106d9.jpg",
+    "https://i.postimg.cc/xd4XwMp1/8bccc0ce-9313-4831-88ff-d9abec1904c2.jpg",
+    "https://i.postimg.cc/ZKtdYPb9/99b214a7-06cf-4c90-988a-7070d6652d5c.jpg",
+    "https://i.postimg.cc/Xv7FSVVQ/a2dba30c-ef17-4559-9a60-76bebc997961.jpg",
+    "https://i.postimg.cc/Z5L3M9hW/Atin.jpg",
+    "https://i.postimg.cc/W1Vg8GxR/b9c1b268-8506-4be6-8c0d-4a882c08ee9c.jpg",
+    "https://i.postimg.cc/02D77WWd/Beginner.jpg",
+    "https://i.postimg.cc/vDFHQv5G/c599f6b8-41e5-4693-bf2e-85b9bcbfb167.jpg",
+    "https://i.postimg.cc/QtCMSCXZ/c77449c0-57c6-4267-8cb3-b0a054c0d415.jpg",
+    "https://i.postimg.cc/tJtC4xkP/c95b353f-b1bd-4915-906d-1d87295909da.jpg",
+    "https://i.postimg.cc/2jqQS8nt/c9d4513f-8026-45c1-b3b5-5ce42f3aae9b.jpg",
+    "https://i.postimg.cc/8zycvLSm/christy.jpg",
+    "https://i.postimg.cc/9FYrWvgS/christy-1.jpg",
+    "https://i.postimg.cc/pd4dGxy9/Christy-1.jpg",
+    "https://i.postimg.cc/Jz7ttP9h/christy-jkt48.jpg",
+    "https://i.postimg.cc/CKz1sdMT/christy-jkt48-1.jpg",
+    "https://i.postimg.cc/FzJH56dP/christy-jkt48-2.jpg",
+    "https://i.postimg.cc/MTLpLwTM/Cool-Baby-Boy-Delshel.jpg",
+    "https://i.postimg.cc/R0XFcKxT/d13d084c-76f9-4a15-a450-303aadbf20ce.jpg",
+    "https://i.postimg.cc/SKyR2V3s/e3b08bda-5f7f-4a1b-91be-254fad708698.jpg",
+    "https://i.postimg.cc/fR7kR1Hp/e9fb88d4-abbc-4fc3-a61e-091b448510e6.jpg",
+    "https://i.postimg.cc/wTm7S1D6/fd0e1f42-2e5b-46ea-bd5a-5b0f809a0b92.jpg",
+    "https://i.postimg.cc/Bb8XZ6yB/foto-freya-jkt48-kece.jpg",
+    "https://i.postimg.cc/SxbJqmGc/foto-freya-jkt48-kece-1.jpg",
+    "https://i.postimg.cc/wv41dJWB/Freya-Jayawardana.jpg",
+    "https://i.postimg.cc/KcV1qPkq/Freya-JKT48.jpg",
+    "https://i.postimg.cc/B6njyNBy/Kathrin-JKT48.jpg",
+    "https://i.postimg.cc/PrpwT3nn/kathrina-jkt48.jpg",
+    "https://i.postimg.cc/BvsL5JLJ/kathrina-jkt48-1.jpg",
+    "https://i.postimg.cc/59kzccGm/kathrina-jkt48-2.jpg",
+    "https://i.postimg.cc/XqhB9FFP/Kathrina-Jkt48-3.jpg",
+    "https://i.postimg.cc/28sB6QCb/michie-JKT48.jpg",
+    "https://i.postimg.cc/0QkSv9PV/Michie-jkt48-1.jpg",
+    "https://i.postimg.cc/Jnpk4ShM/Michie-JKT48-2.jpg",
+    "https://i.postimg.cc/7hbTCXC7/michie-jkt48-3.jpg",
+    "https://i.postimg.cc/FH0kJYKP/Michie-jkt48-Spider-girl.jpg"]
+    var result = data[Math.floor(Math.random() * data.length)];
+    var requestSettings = {
+        url: result,
+        method: 'GET',
+        encoding: null
+    };
+    request(requestSettings, function (error, response, body) {
+        res.set('Content-Type', 'image/png');
+        res.send(body);
+    });
+    limitAdd(apikey);
+})
+
+//downloader
+router.get('/download/facebook', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var url = req.query.url
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!url) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter url"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    const result = await scr.savefrom(url)
+    res.json({
+            result
+        })
+        .catch(e => {
+            console.log(e);
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+router.get('/download/instagram', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var url = req.query.url
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!url) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter username"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+
+    let iglu = await scr.instagramdl(url).catch(async _ => await scr.instagramdlv2(url)).catch(async _ => await scr.instagramdlv3(url)).catch(async _ => await scr.instagramdlv4(url))
+    var result = iglu;
+    res.json({
+            result
+        })
+        .catch(e => {
+            console.log(e);
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+router.get('/download/pinterest', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var url = req.query.q
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!url) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter q"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    scr.pinterest(url)
+        .then(data => {
+            var result = data;
+            res.json({
+                result
+            })
+        })
+        .catch(e => {
+            console.log(e);
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+router.get('/download/tiktok', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var url = req.query.url
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!url) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter url"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    let ttlu = await scr.tiktokdl(url).catch(async _ => await scr.tiktokdlv2(url))
+    var result = ttlu;
+    res.json({
+            result
+        })
+        .catch(e => {
+            console.log(e);
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+router.get('/download/ytmp3', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var url = req.query.url
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!url) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter url"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    const {
+        id,
+        thumbnail,
+        audio: _audio,
+        title
+    } = await scr.youtubedlv2(url)
+    try {
+        for (let i in _audio) {
+            audio = _audio[i]
+            let kin = await audio.download()
+            res.json({
+                id: id,
+                thumbnail: thumbnail,
+                title: title,
+                size: audio.fileSize,
+                download: kin
+            })
+        }
+    } catch {
+        console.log(e);
+        res.json(loghandler.error)
+    }
+    limitAdd(apikey);
+})
+
+router.get('/download/ytmp4', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var url = req.query.url
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!url) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter url"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    const {
+        id,
+        thumbnail,
+        video: _video,
+        title
+    } = await scr.youtubedlv2(url)
+    try {
+        for (let i in _video) {
+            video = _video[i]
+            let kin = await video.download()
+            res.json({
+                id: id,
+                thumbnail: thumbnail,
+                title: title,
+                size: video.fileSize,
+                download: kin
+            })
+        }
+    } catch {
+        console.log(e);
+        res.json(loghandler.error)
+    }
+    limitAdd(apikey);
+})
+// news
+router.get('/news/cnn', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var url = req.query.type
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!url) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter type"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    fetch(encodeURI(`https://news-api-zhirrr.vercel.app/v1/cnn-news`))
+        .then(response => response.json())
+        .then(data => {
+            var result = data;
+            res.json({
+                result
+            })
+        })
+        .catch(e => {
+            console.log(e);
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+router.get('/news/cnbc', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var url = req.query.type
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!url) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter type"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    fetch(encodeURI(`https://news-api-zhirrr.vercel.app/v1/cnbc-news`))
+        .then(response => response.json())
+        .then(data => {
+            var result = data;
+            res.json({
+                result
+            })
+        })
+        .catch(e => {
+            console.log(e);
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+router.get('/news/republika', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var url = req.query.type
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!url) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter type"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    fetch(encodeURI(`https://news-api-zhirrr.vercel.app/v1/republika-news`))
+        .then(response => response.json())
+        .then(data => {
+            var result = data;
+            res.json({
+                result
+            })
+        })
+        .catch(e => {
+            console.log(e);
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+router.get('/news/tempo', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var url = req.query.type
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!url) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter type"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    fetch(encodeURI(`https://news-api-zhirrr.vercel.app/v1/tempo-news/${url}`))
+        .then(response => response.json())
+        .then(data => {
+            var result = data;
+            res.json({
+                author: creator,
+                result
+            })
+        })
+        .catch(e => {
+            console.log(e);
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+router.get('/news/antara', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var url = req.query.type
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!url) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter type"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    fetch(encodeURI(`https://news-api-zhirrr.vercel.app/v1/antara-news/${url}`))
+        .then(response => response.json())
+        .then(data => {
+            var result = data;
+            res.json({
+                author: creator,
+                result
+            })
+        })
+        .catch(e => {
+            console.log(e);
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+router.get('/news/kumparan', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var url = req.query.type
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!url) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter type"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    fetch(encodeURI(`https://news-api-zhirrr.vercel.app/v1/kumparan-news`))
+        .then(response => response.json())
+        .then(data => {
+            var result = data;
+            res.json({
+                author: creator,
+                result
+            })
+        })
+        .catch(e => {
+            console.log(e);
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+
+//photooxy
+router.get('/photooxy/flaming', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var text = req.query.text
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!text) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter text"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    oxy("https://photooxy.com/logo-and-text-effects/realistic-flaming-text-effect-online-197.html", [text])
+        .then((data) => {
+            res.set({
+                'Content-Type': 'image/png'
+            })
+            res.send(data)
+        })
+        .catch((err) => {
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+router.get('/photooxy/shadow-sky', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var text = req.query.text
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!text) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter text"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    oxy("https://photooxy.com/logo-and-text-effects/shadow-text-effect-in-the-sky-394.html", [text])
+        .then((data) => {
+            res.set({
+                'Content-Type': 'image/png'
+            })
+            res.send(data)
+        })
+        .catch((err) => {
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+router.get('/photooxy/metallic', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var text = req.query.text
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!text) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter text"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    oxy("https://photooxy.com/other-design/create-metallic-text-glow-online-188.html", [text])
+        .then((data) => {
+            res.set({
+                'Content-Type': 'image/png'
+            })
+            res.send(data)
+        })
+        .catch((err) => {
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+router.get('/photooxy/naruto', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var text = req.query.text
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!text) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter text"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    oxy("https://photooxy.com/manga-and-anime/make-naruto-banner-online-free-378.html", [text])
+        .then((data) => {
+            res.set({
+                'Content-Type': 'image/png'
+            })
+            res.send(data)
+        })
+        .catch((err) => {
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+router.get('/photooxy/pubg-mobile', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var text = req.query.text
+    var text2 = req.query.text2
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!text || !text2) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter text & text2"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    oxy("https://photooxy.com/battlegrounds/make-wallpaper-battlegrounds-logo-text-146.html", [text, text2])
+        .then((data) => {
+            res.set({
+                'Content-Type': 'image/png'
+            })
+            res.send(data)
+        })
+        .catch((err) => {
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+router.get('/photooxy/rainbow', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var text = req.query.text
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!text) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter text"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    oxy("https://photooxy.com/logo-and-text-effects/rainbow-shine-text-223.html", [text])
+        .then((data) => {
+            res.set({
+                'Content-Type': 'image/png'
+            })
+            res.send(data)
+        })
+        .catch((err) => {
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+router.get('/photooxy/underwater', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var text = req.query.text
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!text) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter text"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    oxy("https://photooxy.com/logo-and-text-effects/creating-an-underwater-ocean-363.html", [text])
+        .then((data) => {
+            res.set({
+                'Content-Type': 'image/png'
+            })
+            res.send(data)
+        })
+        .catch((err) => {
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+router.get('/photooxy/metallic', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var text = req.query.text
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!text) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter text"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    oxy("https://photooxy.com/logo-and-text-effects/illuminated-metallic-effect-177.html", [text])
+        .then((data) => {
+            res.set({
+                'Content-Type': 'image/png'
+            })
+            res.send(data)
+        })
+        .catch((err) => {
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+
+// search api
+router.get('/search/google-image', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var text = req.query.query
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!text) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter query"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    scr.googleImage(text).then(data => {
+            var data = data;
+            res.json({
+                status: 200,
+                data,
+            })
+        })
+        .catch(e => {
+            console.log(e);
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+router.get('/search/wallpaper', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var text = req.query.query
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!text) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter query"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    scr.wallpaper(text)
+        .then(data => {
+            var result = data;
+            res.json({
+                result
+            })
+        })
+        .catch(e => {
+            console.log(e);
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+router.get('/search/pinterest', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var text = req.query.query
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!text) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter query"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    scr.pinterest(text)
+        .then(data => {
+            var result = data;
+            res.json({
+                result
+            })
+        })
+        .catch(e => {
+            console.log(e);
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+
+//nsfw
+router.get('/nsfw/ass', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var text = req.query.page
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    fetch(encodeURI(`https://raw.githubusercontent.com/danzzcoding/data-danzzapi.xyz/main/nsfw/ass.json`))
+        .then(response => response.json())
+        .then(data => {
+            var result = data;
+            var result = data[Math.floor(Math.random() * data.length)];
+            var requestSettings = {
+                url: result.url,
+                method: 'GET',
+                encoding: null
+            };
+            request(requestSettings, function (error, response, body) {
+                res.set('Content-Type', 'image/png');
+                res.send(body);
+            });
+        })
+    limitAdd(apikey);
+})
+router.get('/nsfw/ahegao', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var text = req.query.page
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    fetch(encodeURI(`https://raw.githubusercontent.com/danzzcoding/data-danzzapi.xyz/main/nsfw/ahegao.json`))
+        .then(response => response.json())
+        .then(data => {
+            var result = data;
+            var result = data[Math.floor(Math.random() * data.length)];
+            var requestSettings = {
+                url: result.url,
+                method: 'GET',
+                encoding: null
+            };
+            request(requestSettings, function (error, response, body) {
+                res.set('Content-Type', 'image/png');
+                res.send(body);
+            });
+        })
+    limitAdd(apikey);
+})
+router.get('/nsfw/bdsm', async (req, res, next) => {
+    var apikey = req.query.apikey
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    fetch(encodeURI(`https://raw.githubusercontent.com/danzzcoding/data-danzzapi.xyz/main/nsfw/bdsm.json`))
+        .then(response => response.json())
+        .then(data => {
+            var result = data;
+            var result = data[Math.floor(Math.random() * data.length)];
+            var requestSettings = {
+                url: result.url,
+                method: 'GET',
+                encoding: null
+            };
+            request(requestSettings, function (error, response, body) {
+                res.set('Content-Type', 'image/png');
+                res.send(body);
+            });
+        })
+    limitAdd(apikey);
+})
+router.get('/nsfw/blowjob', async (req, res, next) => {
+    var apikey = req.query.apikey
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    fetch(encodeURI(`https://raw.githubusercontent.com/danzzcoding/data-danzzapi.xyz/main/nsfw/blowjob.json`))
+        .then(response => response.json())
+        .then(data => {
+            var result = data;
+            var result = data[Math.floor(Math.random() * data.length)];
+            var requestSettings = {
+                url: result.url,
+                method: 'GET',
+                encoding: null
+            };
+            request(requestSettings, function (error, response, body) {
+                res.set('Content-Type', 'image/png');
+                res.send(body);
+            });
+        })
+    limitAdd(apikey);
+})
+router.get('/nsfw/cuckold', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var text = req.query.page
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    fetch(encodeURI(`https://raw.githubusercontent.com/danzzcoding/data-danzzapi.xyz/main/nsfw/cuckold.json`))
+        .then(response => response.json())
+        .then(data => {
+            var result = data;
+            var result = data[Math.floor(Math.random() * data.length)];
+            var requestSettings = {
+                url: result.url,
+                method: 'GET',
+                encoding: null
+            };
+            request(requestSettings, function (error, response, body) {
+                res.set('Content-Type', 'image/png');
+                res.send(body);
+            });
+        })
+    limitAdd(apikey);
+})
+
+//game
+router.get('/game/tebakgambar', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var text = req.query.page
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    scr.tebakgambar()
+        .then(data => {
+            var result = data;
+            res.json({
+                result
+            })
+        })
+        .catch(e => {
+            console.log(e);
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+
+router.get('/game/siapakahaku', async (req, res) => {
+    var apikey = req.query.apikey
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    try {
+      const response = await axios.get('https://raw.githubusercontent.com/ramadhankukuh/database/master/src/games/siapakahaku.json');
+      const data = response.data;
+  
+      const randomIndex = Math.floor(Math.random() * data.length);
+      const randomItem = data[randomIndex];
+  
+      res.json(randomItem);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: 'Internal Server Error' });
+    }
+});
+
+router.get('/game/asahotak', async (req, res) => {
+    var apikey = req.query.apikey
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    try {
+      const response = await axios.get('https://raw.githubusercontent.com/ramadhankukuh/database/master/src/games/asahotak.json');
+      const data = response.data;
+  
+      const randomIndex = Math.floor(Math.random() * data.length);
+      const randomItem = data[randomIndex];
+  
+      res.json(randomItem);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: 'Internal Server Error' });
+    }
+});
+
+router.get('/game/caklontong', async (req, res) => {
+    var apikey = req.query.apikey
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    try {
+      const response = await axios.get('https://raw.githubusercontent.com/ramadhankukuh/database/master/src/games/caklontong.json');
+      const data = response.data;
+  
+      const randomIndex = Math.floor(Math.random() * data.length);
+      const randomItem = data[randomIndex];
+  
+      res.json(randomItem);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: 'Internal Server Error' });
+    }
+});
+
+router.get('/game/family100', async (req, res) => {
+    var apikey = req.query.apikey
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    try {
+      const response = await axios.get('https://raw.githubusercontent.com/ramadhankukuh/database/master/src/games/family100.json');
+      const data = response.data;
+  
+      const randomIndex = Math.floor(Math.random() * data.length);
+      const randomItem = data[randomIndex];
+  
+      res.json(randomItem);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: 'Internal Server Error' });
+    }
+});
+
+router.get('/game/susunkata', async (req, res) => {
+    var apikey = req.query.apikey
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    try {
+      const response = await axios.get('https://raw.githubusercontent.com/ramadhankukuh/database/master/src/games/susunkata.json');
+      const data = response.data;
+  
+      const randomIndex = Math.floor(Math.random() * data.length);
+      const randomItem = data[randomIndex];
+  
+      res.json(randomItem);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: 'Internal Server Error' });
+    }
+});
+
+router.get('/game/tebakbendera', async (req, res) => {
+    var apikey = req.query.apikey
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    try {
+      const response = await axios.get('https://raw.githubusercontent.com/ramadhankukuh/database/master/src/games/tebakbendera.json');
+      const data = response.data;
+  
+      const randomIndex = Math.floor(Math.random() * data.length);
+      const randomItem = data[randomIndex];
+  
+      res.json(randomItem);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: 'Internal Server Error' });
+    }
+});
+
+router.get('/game/tebakkalimat', async (req, res) => {
+    var apikey = req.query.apikey
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    try {
+      const response = await axios.get('https://raw.githubusercontent.com/ramadhankukuh/database/master/src/games/tebakkalimat.json');
+      const data = response.data;
+  
+      const randomIndex = Math.floor(Math.random() * data.length);
+      const randomItem = data[randomIndex];
+  
+      res.json(randomItem);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: 'Internal Server Error' });
+    }
+});
+
+router.get('/game/tebakkata', async (req, res) => {
+    var apikey = req.query.apikey
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    try {
+      const response = await axios.get('https://raw.githubusercontent.com/ramadhankukuh/database/master/src/games/tebakkata.json');
+      const data = response.data;
+  
+      const randomIndex = Math.floor(Math.random() * data.length);
+      const randomItem = data[randomIndex];
+  
+      res.json(randomItem);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: 'Internal Server Error' });
+    }
+});
+
+router.get('/game/tebakkimia', async (req, res) => {
+    var apikey = req.query.apikey
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    try {
+      const response = await axios.get('https://raw.githubusercontent.com/ramadhankukuh/database/master/src/games/tebakkimia.json');
+      const data = response.data;
+  
+      const randomIndex = Math.floor(Math.random() * data.length);
+      const randomItem = data[randomIndex];
+  
+      res.json(randomItem);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: 'Internal Server Error' });
+    }
+});
+
+router.get('/game/tebaklagu', async (req, res) => {
+    var apikey = req.query.apikey
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    try {
+      const response = await axios.get('https://raw.githubusercontent.com/ramadhankukuh/database/master/src/games/tebaklagu.json');
+      const data = response.data;
+  
+      const randomIndex = Math.floor(Math.random() * data.length);
+      const randomItem = data[randomIndex];
+  
+      res.json(randomItem);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: 'Internal Server Error' });
+    }
+});
+
+router.get('/game/tebaklirik', async (req, res) => {
+    var apikey = req.query.apikey
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    try {
+      const response = await axios.get('https://raw.githubusercontent.com/ramadhankukuh/database/master/src/games/tebaklirik.json');
+      const data = response.data;
+  
+      const randomIndex = Math.floor(Math.random() * data.length);
+      const randomItem = data[randomIndex];
+  
+      res.json(randomItem);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: 'Internal Server Error' });
+    }
+});
+
+router.get('/game/tebaktebakan', async (req, res) => {
+    var apikey = req.query.apikey
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    try {
+      const response = await axios.get('https://raw.githubusercontent.com/ramadhankukuh/database/master/src/games/tebaktebakan.json');
+      const data = response.data;
+  
+      const randomIndex = Math.floor(Math.random() * data.length);
+      const randomItem = data[randomIndex];
+  
+      res.json(randomItem);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: 'Internal Server Error' });
+    }
+});
+
+router.get('/game/tekateki', async (req, res) => {
+    var apikey = req.query.apikey
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    try {
+      const response = await axios.get('https://raw.githubusercontent.com/ramadhankukuh/database/master/src/games/tekateki.json');
+      const data = response.data;
+  
+      const randomIndex = Math.floor(Math.random() * data.length);
+      const randomItem = data[randomIndex];
+  
+      res.json(randomItem);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: 'Internal Server Error' });
+    }
+});
+
+// other
+router.get('/other/github-stalk', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var text = req.query.username
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!text) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter username"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    fetch(encodeURI(`https://github-api-zhirrr.vercel.app/api/detailuser?q=${text}`))
+        .then(response => response.json())
+        .then(data => {
+            var result = data;
+            res.json({
+                author: creator,
+                result
+            })
+        })
+        .catch(e => {
+            console.log(e);
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+router.get('/other/hilih', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var text = req.query.kata
+    if (!apikey) return res.json(loghandler.noapikey)
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    if (!text) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter kata"
+    })
+    fetch(encodeURI(`https://hilih-api-zhirrr.vercel.app/api/hilih?kata=${text}`))
+        .then(response => response.json())
+        .then(data => {
+            var result = data;
+            res.json({
+                result
+            })
+        })
+        .catch(e => {
+            console.log(e);
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+router.get('/other/kodepos', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var text = req.query.kota
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!text) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter kota"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    fetch(encodeURI(`https://kodepos-api-zhirrr.vercel.app/?q=${text}`))
+        .then(response => response.json())
+        .then(data => {
+            var result = data;
+            res.json({
+                result
+            })
+        })
+        .catch(e => {
+            console.log(e);
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+router.get('/other/covid-world', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var text = req.query.kata
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!text) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter kata"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    fetch(encodeURI(`https://covid19-api-zhirrr.vercel.app/api/world`))
+        .then(response => response.json())
+        .then(data => {
+            var result = data;
+            res.json({
+                result
+            })
+        })
+        .catch(e => {
+            console.log(e);
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+router.get('/other/kbbi', async (req, res, next) => {
+    var apikey = req.query.apikey
+    var text = req.query.kata
+    if (!apikey) return res.json(loghandler.noapikey)
+    if (!text) return res.json({
+        status: false,
+        creator: `${creator}`,
+        message: "masukan parameter kata"
+    })
+    const check = await cekKey(apikey);
+    if (!check) return res.status(403).send({
+        status: 403,
+        message: `apikey ${apikey} not found, please register first! https://${req.hostname}/users/signup`,
+        result: "error"
+    });
+    let limit = await isLimit(apikey);
+    if (limit) return res.status(403).send({
+        status: 403,
+        message: 'your limit has been exhausted, reset every 12 PM'
+    });
+    fetch(encodeURI(`https://kbbi-api-zhirrr.vercel.app/api/kbbi?text=${text}`))
+        .then(response => response.json())
+        .then(data => {
+            var result = data;
+            res.json({
+                result
+            })
+        })
+        .catch(e => {
+            console.log(e);
+            res.json(loghandler.error)
+        })
+    limitAdd(apikey);
+})
+
+module.exports = router

@@ -25,24 +25,31 @@
 }
   
 .garis {
-    height: 90px; 
+    height: 300px; 
     width: 10px; 
     border-right: 1px solid white; 
     margin: 0 10px; 
 }
 
 .garis-2 {
-    height: 50px; 
+    height: 100px; 
     width: 10px; 
     border-right: 1px solid white; 
     margin: 0 10px; 
 }
 
 .garis-3 {
-    height: 50px; 
+    height: 45px; 
     width: 10px; 
     border-right: 1px solid white; 
     margin: 0 10px; 
+}
+
+.garis-4 {
+    height: 50px; 
+    width: 10px; 
+    border-right: 1px solid white; 
+    margin: 0 10px;
 }
   
 /* .content .garis {
@@ -79,10 +86,13 @@
     }
 
     .content .arrow-change .garis {
-        height: 170px;
+        height: 300px;
     }
 
     .content .arrow-change .garis-2 {
-        height: 65px;
+        height: 110px;
+    }
+    .arrow-change {
+        display: none;
     }
 }
